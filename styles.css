@@ -26,7 +26,7 @@ body {
     z-index: 1;
 }
 nav {
-    background-color: rgba(173, 39, 39, 0.9);
+    background-color: rgba(28,57,105);
     margin: 0;
     padding: 0;
     margin-top: 0;
@@ -81,10 +81,10 @@ header .banner_img {
 .personal_info p {
     margin: 5px;
 }
-.google_scholar_logo {
+.sidebar_logo {
     max-width: 28px;
 }
-.google_scholar_logo:hover {
+.sidebar_logo:hover {
     animation-name: slight_scale;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
