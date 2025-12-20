@@ -1,0 +1,238 @@
+[
+    {
+        "_comment": "Each publication item can optionally include a 'pdf' field with a URL to the paper PDF",
+        "_example": {
+            "id": "X1",
+            "authors": "Author names with <strong> or <b> tags for emphasis",
+            "year": "YYYY",
+            "title": "Paper title",
+            "venue": "Venue name",
+            "pdf": "https://example.com/paper.pdf (OPTIONAL)"
+        }
+    },
+    {
+        "category": "Journal Articles",
+        "items": [
+            {
+                "id": "J6",
+                "authors": "Chamzas, C., Quintero, C., Kingston, Z., Orthey, A., <strong>Rakita, D.</strong>, Gleicher, M., Toussaint, M., Kavraki, L.",
+                "year": "2022",
+                "title": "MOTIONBENCHMAKER: A Tool to Generate and Benchmark Motion Planning Datasets.",
+                "venue": "RA-L/ICRA"
+            },
+            {
+                "id": "J5",
+                "authors": "<strong>Rakita, D.</strong>, Mutlu, B., Gleicher, M.",
+                "year": "2021",
+                "title": "Single Query Path Planning using Sample Efficient Probability Informed Trees.",
+                "venue": "RA-L/ICRA"
+            },
+            {
+                "id": "J4",
+                "authors": "<strong>Rakita, D.</strong>, Mutlu, B., Gleicher, M.",
+                "year": "2020",
+                "title": "An Analysis of RelaxedIK: An Optimization-Based Framework for Generating Accurate and Feasible Robot Arm Motions.",
+                "venue": "Autonomous Robotics (AURO)"
+            },
+            {
+                "id": "J3",
+                "authors": "<strong>Rakita, D.</strong>, Mutlu, B., Gleicher, M., and Hiatt, L.",
+                "year": "2019",
+                "title": "Shared-Control-Based Bimanual Robot Manipulation.",
+                "venue": "Science Robotics"
+            },
+            {
+                "id": "J2",
+                "authors": "Bodden, C., <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M.",
+                "year": "2018",
+                "title": "A Flexible Optimization-Based Method for Synthesizing Intent-Expressive Robot Arm Motion.",
+                "venue": "The International Journal of Robotics Research (IJRR). SAGE."
+            },
+            {
+                "id": "J1",
+                "authors": "Pejsa, T., <b>Rakita, D.</b>, Mutlu, B., & Gleicher, M.",
+                "year": "2016",
+                "title": "Authoring directed gaze for full-body motion capture.",
+                "venue": "ACM Transactions on Graphics, 35(6), 1–11. Proceedings SIGGRAPH ASIA 2016."
+            }
+        ]
+    },
+    {
+        "category": "Conference Papers",
+        "items": [
+            {
+                "id": "C22",
+                "authors": "<strong>Rakita, D.</strong>, Liang, C.*, Wang, Q.*.",
+                "year": "2025",
+                "title": "Coherance-based Approximate Derivatives via Web of Affine Spaces Optimization.",
+                "venue": "RSS"
+            },
+            {
+                "id": "C21",
+                "authors": "Sun, X., Chen, Y., Fan, F., Lian, Y., and <strong>Rakita, D.</strong>.",
+                "year": "2025",
+                "title": "Dynamic Rank Adjustment in Diffusion Policies for Efficient and Flexible Training.",
+                "venue": "RSS"
+            },
+            {
+                "id": "C20",
+                "authors": "Hoffmeister, L.M., Scassellati, B., <strong>Rakita, D.</strong>",
+                "year": "2024",
+                "title": "Sequential Discrete Action Selection via Blocking Conditions and Resolutions.",
+                "venue": "IROS"
+            },
+            {
+                "id": "C19",
+                "authors": "Patel, V., <b>Rakita, D.</b>, and Dollar, A.",
+                "year": "2023",
+                "title": "An Analysis of Unified Manipulation with Robot Arms and Dexterous Hands via Optimization-based Motion Synthesis.",
+                "venue": "ICRA"
+            },
+            {
+                "id": "C18",
+                "authors": "Wang, Y., Praveena, P., <b>Rakita, D.</b>, and Gleicher, M.",
+                "year": "2023",
+                "title": "RangedIK: An Optimization-Based Robot Motion Generation Method for Ranged-Goal Tasks.",
+                "venue": "ICRA"
+            },
+            {
+                "id": "C17",
+                "authors": "Schoen, A., Sullivan, D., Zhang, Z., <b>Rakita, D.</b>, and Mutlu, M.",
+                "year": "2023",
+                "title": "Lively: Enabling Multimodal, Lifelike, and Extensible Real-time Robot Motion.",
+                "venue": "HRI"
+            },
+            {
+                "id": "C16",
+                "authors": "<b>Rakita, D.</b>, Mutlu, B., and Gleicher, M.",
+                "year": "2022",
+                "title": "Proxima: An Approach for Time or Accuracy Budgeted Collision Proximity Queries.",
+                "venue": "RSS"
+            },
+            {
+                "id": "C15",
+                "authors": "<b>Rakita, D.</b>, Shi, H., Mutlu, B., and Gleicher, M.",
+                "year": "2021",
+                "title": "CollisionIK: A Per-Instant Pose Optimization Method for Generating Robot Motions.",
+                "venue": "ICRA"
+            },
+            {
+                "id": "C14",
+                "authors": "<b>Rakita, D.</b>, Mutlu, B., and Gleicher, M.",
+                "year": "2021",
+                "title": "Strobe: An Acceleration Meta-algorithm for Optimizing Robot Paths using Concurrent Interleaved Sub-Epoch Pods.",
+                "venue": "ICRA"
+            },
+            {
+                "id": "C13",
+                "authors": "<b>Rakita, D.</b>, Mutlu, B., and Gleicher, M.",
+                "year": "2020",
+                "title": "Effects of Onset Latency and Robot Speed Delays on Mimicry-Control Teleoperation.",
+                "venue": "HRI"
+            },
+            {
+                "id": "C12",
+                "authors": "Praveena, P., <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M.",
+                "year": "2020",
+                "title": "Supporting Perception of Weight through Motion-induced Sensory Conflicts in Robot Teleoperation.",
+                "venue": "HRI"
+            },
+            {
+                "id": "C11",
+                "authors": "<b>Rakita, D.</b>, Mutlu, B., and Gleicher, M.",
+                "year": "2019",
+                "title": "Remote Telemanipulation with Adapting Viewpoints in Visually Complex Environments.",
+                "venue": "RSS"
+            },
+            {
+                "id": "C10",
+                "authors": "<b>Rakita, D.</b>, Mutlu, B., and Gleicher, M.",
+                "year": "2019",
+                "title": "Stampede: A Discrete-Optimization Method for Solving Pathwise-Inverse Kinematics.",
+                "venue": "ICRA"
+            },
+            {
+                "id": "C9",
+                "authors": "Praveena, P., <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M.",
+                "year": "2019",
+                "title": "User-Guided Offline Synthesis of Robot Arm Motion from 6- DoF Paths.",
+                "venue": "ICRA"
+            },
+            {
+                "id": "C8",
+                "authors": "<b>Rakita, D.</b>, Mutlu, B., and Gleicher, M.",
+                "year": "2018",
+                "title": "RelaxedIK: Real-time Synthesis of Accurate and Feasible Robot Arm Motion.",
+                "venue": "RSS"
+            },
+            {
+                "id": "C7",
+                "authors": "<b>Rakita, D.</b>, Mutlu, B., and Gleicher, M.",
+                "year": "2018",
+                "title": "An Autonomous Dynamic Camera Method for Effective Remote Teleoperation.",
+                "venue": "HRI"
+            },
+            {
+                "id": "C6",
+                "authors": "<b>Rakita, D.</b>, Mutlu, B., Gleicher, M., and Hiatt, L.",
+                "year": "2018",
+                "title": "Shared Dynamic Curves: A Shared-Control Telemanipulation Method for Motor Task Training.",
+                "venue": "HRI"
+            },
+            {
+                "id": "C5",
+                "authors": "<b>Rakita, D.</b>, Mutlu, B., and Gleicher, M.",
+                "year": "2017",
+                "title": "A Motion Retargeting Method for Effective Mimicry-based Teleoperation of Robot Arms.",
+                "venue": "HRI"
+            },
+            {
+                "id": "C4",
+                "authors": "Liu, O., <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M.",
+                "year": "2017",
+                "title": "Understanding Human-Robot Interaction in Virtual Reality.",
+                "venue": "RO-MAN"
+            },
+            {
+                "id": "C3",
+                "authors": "Subramani, G., <b>Rakita, D.</b>, Wang H., Zinn, M., Gleicher, M.",
+                "year": "2017",
+                "title": "Recognizing Actions during Tactile Manipulations through Force Sensing.",
+                "venue": "IROS"
+            },
+            {
+                "id": "C2",
+                "authors": "<b>Rakita, D.</b>, Mutlu, B., and Gleicher, M.",
+                "year": "2016",
+                "title": "Motion Synopsis for Robot Arm Trajectories.",
+                "venue": "RO-MAN"
+            },
+            {
+                "id": "C1",
+                "authors": "Bodden, C., <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M.",
+                "year": "2016",
+                "title": "Evaluating Intent-Expressive Robot Arm Motion.",
+                "venue": "RO-MAN"
+            }
+        ]
+    },
+    {
+        "category": "Short Papers",
+        "items": [
+            {
+                "id": "S2",
+                "authors": "<strong>Rakita, D.</strong>",
+                "year": "2017",
+                "title": "Methods for Effective Mimicry-based Teleoperation of Robot Arms.",
+                "venue": "HRI Pioneers Workshop"
+            },
+            {
+                "id": "S1",
+                "authors": "<b>Rakita, D.</b>, Pejsa, T., Mutlu, B., and Gleicher, M.",
+                "year": "2015",
+                "title": "Inferring Gaze Shifts from Captured Body Motion.",
+                "venue": "SIGGRAPH Poster Proceedings"
+            }
+        ]
+    }
+]

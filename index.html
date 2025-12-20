@@ -1,353 +1,251 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Danny Rakita </title>
-        <link rel="stylesheet" href="styles.css" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<html lang="en">
 
-    <body>
-        <div id="top"></div>
-        <div class="grid_container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Rakita | Yale University</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-            <!-- Banner -->
-            <header class="banner" >
-                <a href="#top">
-                <img class="banner_img_wide" src="imgs/banner-wide.png" alt="banner">
-                <img class="banner_img" src="imgs/banner.png" alt="banner">
-                </a>
-                <nav>
-                    <ul>
-                        <li>
-                            <a class="anchor navbutton" href="#about_me">About Me</a>
-                        </li>
-                        <li>
-                            <a class="anchor navbutton" href="#news">News</a>
-                        </li>
-                        <li>
-                            <a class="anchor navbutton" href="#cv">CV</a>
-                        </li>
-                        <li>
-                            <a class="anchor navbutton" href="#publications">Publications</a>
-                        </li>
-                        <li>
-                            <a class="anchor navbutton" href="#awards">Awards</a>
-                        </li>
-                        <li>
-                            <a class="anchor navbutton" href="#videos">Videos</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+<body>
+    <div id="top"></div>
 
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <img class="picture" src="imgs/picture.JPG" alt="picture">
-                <img class="picture_circle" src="imgs/picture_circle.png" alt="picture">
-                <img class="picture_small" src="imgs/picture_small.png" alt="picture">
-                <div class="personal_info" >
-                    <p><b>Daniel Rakita</b></p>
-                    <p>Yale University</p>
-                    <p>Assistant Professor </p>
-                    <p>Email: daniel.rakita@yale.edu</p>
+    <header class="banner">
+        <nav>
+            <ul>
+                <li><a class="navbutton" href="#about_me">About</a></li>
+                <li><a class="navbutton" href="#apollo_lab">APOLLO Lab</a></li>
+                <li><a class="navbutton" href="#news">News</a></li>
+                <li><a class="navbutton" href="#cv">CV</a></li>
+                <li><a class="navbutton" href="#publications">Publications</a></li>
+                <li><a class="navbutton" href="#awards">Awards</a></li>
+                <li><a class="navbutton" href="#videos">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid_container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile_card" data-reveal>
+                <img class="picture" src="imgs/picture.JPG" alt="Daniel Rakita">
+                <div class="personal_info">
+                    <h2 class="profile_name">Daniel Rakita</h2>
+                    <p>Assistant Professor</p>
+                    <p>Department of Computer Science</p>
+                    <div class="university_branding">
+                        <p>Yale University</p>
+                        <img src="imgs/Yale_Bulldogs_logo.svg.png" alt="Yale Logo" class="yale_sidebar_logo">
+                    </div>
+                    <p><a href="mailto:daniel.rakita@yale.edu">daniel.rakita@yale.edu</a></p>
                 </div>
-                <a href="https://scholar.google.com/citations?user=1Y-cnCUAAAAJ&hl=en">
-                    <img class="sidebar_logo" src="imgs/scholar.png" style="width:70px;" alt="google_scholar_picture"> 
-                </a>
-                <a href="https://twitter.com/djrakita10">
-                    <img class="sidebar_logo" src="imgs/twitter.png" style="width:70px;" alt="twitter_picture"> 
-                </a>
-                <a href="https://www.researchgate.net/profile/Daniel-Rakita">
-                    <img class="sidebar_logo" src="imgs/researchgate.png" style="width:70px;" alt="twitter_picture"> 
-                </a>
-            </div>
-
-            <!-- Main Content -->
-            <div class="main_content">
-                <!-- About Me -->
-                <a id="about_me"></a>
-                <h1 class="section_header">About Me</h1>
-                <div class="about_me">
-                    I am an Assistant Professor at <a href="https://www.yale.edu/">Yale University</a> in the <a href="https://cpsc.yale.edu/">Department of Computer Science</a> where I lead the <a href="https://apollo-lab-yale.github.io/">Applied Planning, Learning, and Optimization (APOLLO) Lab</a>.
-                    
-                    <br>
-                    <br>
-
-                    <a href="https://apollo-lab-yale.github.io/">
-                        <img src="imgs/ALwide.png" alt="lab logo", height="80">
+                <div class="sidebar_socials">
+                    <a href="https://scholar.google.com/citations?user=1Y-cnCUAAAAJ" target="_blank">
+                        <img class="sidebar_logo" src="imgs/scholar.png" alt="Google Scholar">
                     </a>
-
-                    <br>
-                    <br>
-                    
-                    My research primarily involves formulating <b>planning</b>, <b>learning</b>, and <b>optimization</b> algorithms 
-                    that allow robot manipulation platforms to effectively complete tasks. 
-
-                    <br>
-                    <br>
-
-                    The goal of my work is to enable people to intuitively control or work alongside robot manipulation
-                    platforms to perform critical tasks deemed unsuitable, undesirable, understaffed, or unsafe for people,
-                    such as full-time homecare, home assistance, telenursing, robot surgery, disaster relief, large-scale
-                    manufacturing, nuclear materials handling, and space robotics. I use interdisciplinary techniques
-                    across robotics and computer science, including motion planning, motion optimization, shared
-                    autonomy, human-robot interaction, and machine learning to formulate and validate generalizable,
-                    end-to-end solutions within these problem spaces.
-
-                    <br>
-                    <br>
-                </div>
-
-                <hr>
-
-                <a id="news"></a>
-                <h1 class="section_header">News</h1>
-                <div class="news">
-
-                    <b>[June 2025]: </b> The APOLLO lab has two papers accepted to IROS 2025!  
-
-                    <br>
-                    <br>
-
-                    <b>[April 2025]: </b> The APOLLO lab has two papers accepted to RSS 2025!  
-                    <!--
-                    <br>Our papers <em>Dynamic Rank Adjustment in Diffusion Policies for Efficient and Flexible Training</em> (authors: Xiatao Sun, Shuo Yang, Yinxing (Jack) Chen, Franics Fan, Yiyan (Edgar) Liang, Daniel Rakita) and <em>Coherance-based Approximate Derivatives via Web of Affine Spaces Optimization</em> (authors: Daniel Rakita, Chen Liang, Qian (Peter) Wang) will be presented at USC in June.  
-                    -->
-
-                    <br>
-                    <br>
-
-                    <b>[February 2025]: </b> Our work, <em>AI-Powered Semantic Segmentation Model for Enhanced Ureteral Mapping and Real-Time Instrument Feedback in Robotic Surgery</em>, in collaboration with Yale New Haven Health, will be presented at the Korean Society of Endo-Laproscopic & Robotic Surgery (KSERS) Symposium in April 2025.
-
-                    <br>
-                    <br>
-
-                    <b>[December 2024]: </b> Our work, <em>AI-Technology Innovations in Robotic Colorectal Surgery – Detecting Optimal Angles for Critical Exposure and Division of the Inferior Mesenteric Artery</em>, in collaboration with Yale New Haven Health, will be presented at the American Society of Colon and Rectal Surgeons (ASCRS) meeting in San Diego May 2025.
-
-
-                    <br>
-                    <br>
-
-                    <b>[October 2024]: </b> Our work, <em>Sequential Discrete Action Selection via Blocking Conditions and Resolutions</em> with authors Liam Merz Hoffmeister, Brian Scassellati, and Daniel Rakita, will be presented at IROS 2024.
-
-                    <br>
-                    <br>
-
-                    <b>[March 2024]: </b> This year's issue of <a href="https://www.yaleseas.com/magazine/2024/?j=2514029&sfmc_sub=45726955&l=1593_HTML&u=70805045&mid=100010513&jb=2001">Yale Engineering Magazine</a> highlights a lot of exciting work happening in Yale robotics!  
-
-                    <br>
-                    <br>
-
-                    <b>[January 2024]:</b> Excited to share that our grant proposal <a href="https://cpsc.yale.edu/news/daniel-rakita-and-brian-scassellati-awarded-grant-improve-robot-manipulation-cluttered"> <em>Robot Manipulation in Densely Cluttered Environments</em></a> was recently funded by the Office of Naval Research.
-                    If you are interested in working on this project, feel free to reach out!
-
-                    <br>
-                    <br>
-                    <!--
-                    <br>
-                    <br>
-
-                    <b>[April 2023]:</b> <a href="https://seas.yale.edu/news-events/news/grasping-future-robotic-arm-hand-combo">News article</a> on our paper <em>An Analysis of Unified Manipulation with Robot Arms and Dexterous Hands via Optimization-based Motion Synthesis</em> that will be featured at ICRA 2023 in London.
-
-                    <br>
-                    <br>
-
-                    <b>[March 2023]:</b> Our paper, <em>Lively: Enabling Multimodal, Lifelike, and Extensible Real-time Robot Motion</em>, won a Best Paper Award at HRI 2023!  Check out documentation and code for our proposed method <a href="https://wisc-hci.github.io/lively/">here</a>.
-                    -->
-
-
-                </div>
-
-                <hr>
-
-                <!-- CV -->
-                <a id="cv"></a>
-                <h1 class="section_header"> CV </h1>
-                <p>Click to download.</p>
-                <a href="downloads/Rakita CV.pdf" target="_blank">
-                    <img class="cv_image" src="imgs/cv_image.PNG" alt="cv_image">
-                </a>
-
-                <br>
-                <br>
-
-                <hr>
-
-                <!-- Publications -->
-                <a id="publications"></a>
-                <h1 class="section_header"> Publications
-                    <h2>&emsp; Journal Articles</h2>
-                    <p class="publication">[J6] Chamzas, C., Quintero, C., Kingston, Z., Orthey, A., <b>Rakita, D.</b>, Gleicher,
-                        M., Toussaint, M., Kavraki, L. 2022. MOTIONBENCHMAKER: A Tool to
-                        Generate and Benchmark Motion Planning Datasets. <em>Robotics and
-                            Automation Letters (RA-L). In Proceedings International Conference on
-                            Robotics and Automation (ICRA)</em>.</p>
-                    <p class="publication">[J5] <b>Rakita, D.</b>, Mutlu, B., Gleicher, M. 2021. Single Query Path Planning using
-                        Sample Efficient Probability Informed Trees. Robotics and Automation
-                        Letters (RA-L). <em>In Proceedings International Conference on Robotics and
-                            Automation (ICRA).</em> </p>
-                    <p class="publication">[J4] <b>Rakita, D.</b>, Mutlu, B., Gleicher, M. 2020. An Analysis of RelaxedIK: An
-                        Optimization-Based Framework for Generating Accurate and Feasible Robot
-                        Arm Motions. <em>Autonomous Robotics (AURO)</em>. </p>
-                    <p class="publication">[J3] <b>Rakita, D.</b>, Mutlu, B., Gleicher, M., and Hiatt, L. 2019.
-                        Shared-Control-Based Bimanual Robot Manipulation. <em>Science Robotics</em>.</p>
-                    <p class="publication">[J2] Bodden, C., <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M. 2018. A Flexible
-                        Optimization-Based Method for Synthesizing Intent-Expressive Robot Arm
-                        Motion. <em>The International Journal of Robotics Research (IJRR)</em>. SAGE. </p>
-                    <p class="publication">[J1] Pejsa, T., <b>Rakita, D.</b>, Mutlu, B., & Gleicher, M. 2016. Authoring directed
-                        gaze for full-body motion capture. <em>ACM Transactions on Graphics, 35(6),
-                            1–11. Proceedings SIGGRAPH ASIA 2016</em>, December 2016.</p>
-                    <br>
-                    <h2>&emsp; Conference Papers</h2>
-
-                    <p>[C22] <b>Rakita, D.</b>, Liang, C.*, Wang, Q.*. 2025. 
-                        Coherance-based Approximate Derivatives via Web of Affine Spaces Optimization.  
-                        <em>Robotics: Science and Systems (RSS)</em> .</p>
-                    <p>[C21] Sun, X., Chen, Y., Fan, F., Lian, Y., and <b>Rakita, D.</b>. 2025. 
-                        Dynamic Rank Adjustment in Diffusion Policies for Efficient and Flexible Training.  
-                        <em>Robotics: Science and Systems (RSS)</em>.</p>
-                    <p>[C20] Hoffmeister, L.M., Scassellati, B., <b>Rakita, D.</b> 2024. 
-                        Sequential Discrete Action Selection via Blocking Conditions and Resolutions. 
-                        In <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>.</p>
-                    <p>[C19] Patel, V., <b>Rakita, D.</b>, and Dollar, A. 2023. 
-                        An Analysis of Unified Manipulation with Robot Arms and Dexterous Hands via Optimization-based Motion Synthesis.  
-                        <em>International Conference on Robotics and Automation</em> (ICRA).</p>
-                    <p>[C18] Wang, Y., Praveena, P., <b>Rakita, D.</b>, and Gleicher, M. 2023.  
-                        RangedIK: An Optimization-Based Robot Motion Generation Method for Ranged-Goal Tasks.  
-                        <em>International Conference on Robotics and Automation</em> (ICRA).</p>
-                    <p>[C17] Schoen, A., Sullivan, D., Zhang, Z., <b>Rakita, D.</b>, and Mutlu, M.  2023.  
-                        Lively: Enabling Multimodal, Lifelike, and Extensible Real-time Robot Motion.  
-                        <em>International Conference on Human-Robot Interaction (HRI)</em>. ACM/IEEE. </p>
-                    <p>[C16] <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M. 2022. 
-			Proxima: An Approach for Time or Accuracy Budgeted Collision Proximity Queries. 
-			<em> Robotics: Science and Systems (RSS) </em>.</p>
-                    <p>[C15] <b>Rakita, D.</b>, Shi, H., Mutlu, B., and Gleicher, M. 2021. CollisionIK: A
-                        Per-Instant Pose Optimization Method for Generating Robot Motions with
-                        Environment Collision Avoidance. <em>International Conference on Robotics
-                            and Automation (ICRA)</em>.</p>
-                    <p>[C14] <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M. 2021. Strobe: An Acceleration
-                        Meta-algorithm for Optimizing Robot Paths using Concurrent Interleaved
-                        Sub-Epoch Pods. <em>International Conference on Robotics and Automation
-                            (ICRA)</em>.</p>
-                    <p>[C13] <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M. 2020. Effects of Onset Latency and
-                        Robot Speed Delays on Mimicry-Control Teleoperation. <em>International
-                            Conference on Human-Robot Interaction (HRI)</em>. ACM/IEEE </p>
-                    <p>[C12] Praveena, P., <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M. 2020. Supporting
-                        Perception of Weight through Motion-induced Sensory Conflicts in Robot
-                        Teleoperation. <em>International Conference on Human-Robot Interaction
-                            (HRI)</em>. ACM/IEEE. </p>
-                    <p>[C11] <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M. 2019. Remote Telemanipulation
-                        with Adapting Viewpoints in Visually Complex Environments. <em>Robotics:
-                            Science and Systems (RSS)</em>.</p>
-                    <p>[C10] <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M. 2019. Stampede: A
-                        Discrete-Optimization Method for Solving Pathwise-Inverse Kinematics.
-                        <em>International Conference on Robotics and Automation (ICRA)</em>.</p>
-                    <p>[C9] Praveena, P., <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M. 2019. User-Guided
-                        Offline Synthesis of Robot Arm Motion from 6- DoF Paths. <em>International
-                            Conference on Robotics and Automation (ICRA)</em>. </p>
-                    <p>[C8] <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M. 2018. RelaxedIK: Real-time
-                        Synthesis of Accurate and Feasible Robot Arm Motion. <em>Robotics: Science
-                            and Systems (RSS)</em>. </p>
-                    <p>[C7] <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M. 2018. An Autonomous Dynamic
-                        Camera Method for Effective Remote Teleoperation. <em>International
-                            Conference on Human-Robot Interaction (HRI)</em>. ACM/IEEE.</p>
-                    <p>[C6] <b>Rakita, D.</b>, Mutlu, B., Gleicher, M., and Hiatt, L. 2018. Shared Dynamic
-                        Curves: A Shared-Control Telemanipulation Method for Motor Task
-                        Training. <em>International Conference on Human-Robot Interaction (HRI)</em>.
-                        ACM/IEEE.</p>
-                    <p>[C5] <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M. 2017. A Motion Retargeting Method
-                        for Effective Mimicry-based Teleoperation of Robot Arms. <em>International
-                            Conference on Human-Robot Interaction (HRI)</em>. ACM/IEEE. </p>
-                    <p>[C4] Liu, O., <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M. 2017. Understanding
-                        Human-Robot Interaction in Virtual Reality. RO-MAN 2017-The IEEE
-                        <em>International Symposium on Robot and Human Interactive Communication</em>.
-                        IEEE.</p>
-                    <p>[C3] Subramani, G., <b>Rakita, D.</b>, Wang H., Zinn, M., Gleicher, M. 2017.
-                        Recognizing Actions during Tactile Manipulations through Force Sensing.
-                        <em>International Conference on Intelligent Robots and Systems (IROS)</em>.
-                        IEEE/RSJ.</p>
-                    <p>[C2] <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M. 2016. Motion Synopsis for Robot
-                        Arm Trajectories. RO-MAN 2016-The 25th IEEE International Symposium
-                        on Robot and Human Interactive Communication. IEEE.</p>
-                    <p>[C1] Bodden, C., <b>Rakita, D.</b>, Mutlu, B., and Gleicher, M. 2016. Evaluating
-                        Intent-Expressive Robot Arm Motion. RO-MAN 2016-The 25th IEEE
-                        International Symposium on Robot and Human Interactive Communication.
-                        IEEE.</p>
-                    <br>
-
-                    <h2>&emsp; Short Papers</h2>
-                    <p>[S2] <b>Rakita, D.</b> 2017. Methods for Effective Mimicry-based Teleoperation of
-                        Robot Arms. <em>International Conference on Human-Robot Interaction (HRI)</em>
-                        Pioneers Workshop. </p>
-                    <p>[S1] <b>Rakita, D.</b>, Pejsa, T., Mutlu, B., and Gleicher, M. 2015. Inferring Gaze
-                        Shifts from Captured Body Motion. SIGGRAPH 2015 Poster Proceedings 77,
-                        77:1. </p>
-                </h1>
-
-                <br>
-                <br>
-
-                <hr>
-                
-                <!-- Awards -->
-                <a id="awards"></a>
-                <h1 class="section_header">Awards</h1>
-                <p>[A12] <b>Best Paper Award Winner</b>, ACM/IEEE Conference on Human-Robot
-                    Interaction (HRI) (2023)</p>
-                <p>[A11] <b>Outstanding Graduate-Student Research Award</b>, UW-Madison (2022)</p>
-                <p>[A10] <b>Outstanding Reviewer Award</b>, Selected by IROS Conference Paper
-                    Review Board, Top 4 of 3,942 (2021)</p>
-                <p>[A9] <b>Cisco Graduate Student Fellowship Recipient</b>, UW-Madison (2021)</p>
-                <p>[A8] <b>Three Minute Thesis Competition Finalist</b>, UW-Madison (2021)</p>
-                <p>[A7] <b>Best Paper Award Finalist</b>, ACM/IEEE Conference on Human-Robot Interaction (2021)</p>
-                <p>[A6] <b>Microsoft PhD Fellowship Recipient</b> (2019)</p>
-                <p>[A5] <b>Best Paper Award Winner</b>, ACM/IEEE Conference on Human-Robot
-                    Interaction (HRI), Top 4 of 206 papers (2018)</p>
-                <p>[A4] <b>NSF Graduate Research Fellowship Program Honorable
-                    Mention</b> (2017)</p>
-                <p>[A3] <b>HRI Pioneer</b>, accepted to the selective workshop held at HRI 2017</p>
-                <p>[A2] <b>Best Paper Award Nominee</b>, IEEE Symposium on Robot and Human
-                    Interactive Communication (2017) </p>
-                <p>[A1] <b>ACM SIGGRAPH Student Research Competition 1st Place</b></p>
-                
-                <br>
-                <br>
-
-                <hr>
-
-                <div class="video_section">
-                    <!-- Videos -->
-                    <a id="videos"></a>
-                    <h1 class="section_header">Videos</h1>
-
-                    <!--Proxima-->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A6SdyaIeTrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                    <!--Talking robotics-->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GGWh9HRuACM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                    <!--RelaxedIK-->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AhsQFJzB8WQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                    <!-- Bimanual -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cGh0UncVxck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                    <!-- Autocam -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xvDwTJd8f4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                    <!-- RSS Cam -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2JyNU2O5onc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                    <!--collision IK-->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rdMl1gOPNoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://twitter.com/djrakita10" target="_blank">
+                        <img class="sidebar_logo" src="imgs/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Daniel-Rakita" target="_blank">
+                        <img class="sidebar_logo" src="imgs/researchgate.png" alt="ResearchGate">
+                    </a>
                 </div>
             </div>
-            <div class="footer">&#169 Daniel Rakita 2024 </div>
-        </div>
 
-        <div class="return_to_top">
-            <a href="#top"> Return to Top</a>
-        </div>
+        </aside>
 
-    </body>
+        <!-- Main Content -->
+        <main class="main_content">
+            <!-- About Me -->
+            <section id="about_me" data-reveal>
+                <h1 class="section_header">About Me</h1>
+                <div class="about_me_text">
+                    <p>
+                        I am an Assistant Professor at <strong>Yale University</strong> in the Department of Computer
+                        Science where I lead the <strong>Applied Planning, Learning, and Optimization (APOLLO)
+                            Lab</strong>.
+                    </p>
+                    <p style="margin-top: 1.5rem;">
+                        My research primarily involves formulating <strong>planning</strong>, <strong>learning</strong>,
+                        and <strong>optimization</strong> algorithms that allow robot manipulation platforms to
+                        effectively complete tasks.
+                    </p>
+                    <p style="margin-top: 1.5rem;">
+                        The goal of my work is to enable people to intuitively control or work alongside robot
+                        manipulation platforms to perform critical tasks deemed unsuitable, undesirable, understaffed,
+                        or unsafe for people, such as full-time homecare, home assistance, telenursing, robot surgery,
+                        disaster relief, large-scale manufacturing, nuclear materials handling, and space robotics. I
+                        use interdisciplinary techniques across robotics and computer science, including motion
+                        planning, motion optimization, shared autonomy, human-robot interaction, and machine learning to
+                        formulate and validate generalizable, end-to-end solutions within these problem spaces.
+                    </p>
+                </div>
+            </section>
+
+            <hr style="margin-bottom: 4rem; opacity: 0.1;">
+
+            <!-- APOLLO Lab -->
+            <section id="apollo_lab" data-reveal>
+                <div style="text-align: center; margin: 2rem 0;">
+                    <a href="https://apollo-lab-yale.github.io/" target="_blank">
+                        <img src="imgs/ALwide.png" alt="APOLLO Lab Logo"
+                            style="max-width: 400px; width: 100%; height: auto; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));">
+                    </a>
+                    <p style="margin-top: 1.5rem; font-size: 1.1rem;">
+                        Visit the <a href="https://apollo-lab-yale.github.io/" target="_blank">Applied Planning,
+                            Learning, and Optimization (APOLLO) Lab</a> website for more information about our research
+                        projects, team, and open positions.
+                    </p>
+                </div>
+            </section>
+
+            <hr style="margin-bottom: 4rem; opacity: 0.1;">
+
+            <!-- News -->
+            <section id="news" data-reveal>
+                <h1 class="section_header">News</h1>
+                <div class="news_list">
+                    <div class="news_item">
+                        <span class="news_date">[June 2025]</span> The APOLLO lab has two papers accepted to IROS 2025!
+                    </div>
+                    <div class="news_item">
+                        <span class="news_date">[April 2025]</span> The APOLLO lab has two papers accepted to RSS 2025!
+                    </div>
+                    <div class="news_item">
+                        <span class="news_date">[February 2025]</span> Our work, <em>AI-Powered Semantic Segmentation
+                            Model for Enhanced Ureteral Mapping and Real-Time Instrument Feedback in Robotic
+                            Surgery</em>, in collaboration with Yale New Haven Health, will be presented at the Korean
+                        Society of Endo-Laproscopic & Robotic Surgery (KSERS) Symposium in April 2025.
+                    </div>
+                    <div class="news_item">
+                        <span class="news_date">[December 2024]</span> Our work, <em>AI-Technology Innovations in
+                            Robotic Colorectal Surgery – Detecting Optimal Angles for Critical Exposure and Division of
+                            the Inferior Mesenteric Artery</em>, in collaboration with Yale New Haven Health, will be
+                        presented at the American Society of Colon and Rectal Surgeons (ASCRS) meeting in San Diego May
+                        2025.
+                    </div>
+                    <div class="news_item">
+                        <span class="news_date">[October 2024]</span> Our work, <em>Sequential Discrete Action Selection
+                            via Blocking Conditions and Resolutions</em> with authors Liam Merz Hoffmeister, Brian
+                        Scassellati, and Daniel Rakita, will be presented at IROS 2024.
+                    </div>
+                    <div class="news_item">
+                        <span class="news_date">[March 2024]</span> This year's issue of <a
+                            href="https://www.yaleseas.com/magazine/2024/">Yale Engineering Magazine</a> highlights a
+                        lot of exciting work happening in Yale robotics!
+                    </div>
+                    <div class="news_item">
+                        <span class="news_date">[January 2024]</span> Excited to share that our grant proposal <a
+                            href="https://cpsc.yale.edu/news/daniel-rakita-and-brian-scassellati-awarded-grant-improve-robot-manipulation-cluttered"><em>Robot
+                                Manipulation in Densely Cluttered Environments</em></a> was recently funded by the
+                        Office of Naval Research.
+                    </div>
+                </div>
+            </section>
+
+            <hr style="margin-bottom: 4rem; opacity: 0.1;">
+
+            <!-- CV Section -->
+            <section id="cv" data-reveal>
+                <h1 class="section_header">Curriculum Vitae</h1>
+                <div style="display: flex; align-items: center; gap: 2rem;">
+                    <a href="downloads/Rakita CV.pdf" target="_blank" class="cv_link">
+                        <img class="cv_image" src="imgs/cv_image.PNG" alt="CV Thumbnail"
+                            style="width: 120px; border: 1px solid #eee; padding: 5px; border-radius: 4px;">
+                    </a>
+                    <p>My full CV is available for download: <a href="downloads/Rakita CV.pdf" target="_blank">Download
+                            PDF</a></p>
+                </div>
+            </section>
+
+            <hr style="margin-bottom: 4rem; opacity: 0.1;">
+
+            <!-- Publications -->
+            <section id="publications" data-reveal>
+                <h1 class="section_header">Publications</h1>
+                <div id="publications_container">
+                    <!-- This will be populated dynamically from publications.json -->
+                    <div style="text-align: center; padding: 2rem;">
+                        <p>Loading publications...</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr style="margin-bottom: 4rem; opacity: 0.1;">
+
+            <!-- Awards -->
+            <section id="awards" data-reveal>
+                <h1 class="section_header">Awards</h1>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li class="news_item"><strong>Best Paper Award Winner</strong>, ACM/IEEE HRI (2023)</li>
+                    <li class="news_item"><strong>Outstanding Graduate-Student Research Award</strong>, UW-Madison
+                        (2022)</li>
+                    <li class="news_item"><strong>Outstanding Reviewer Award</strong>, IROS (2021)</li>
+                    <li class="news_item"><strong>Cisco Graduate Student Fellowship Recipient</strong>, UW-Madison
+                        (2021)</li>
+                    <li class="news_item"><strong>Three Minute Thesis Competition Finalist</strong>, UW-Madison (2021)
+                    </li>
+                    <li class="news_item"><strong>Best Paper Award Finalist</strong>, ACM/IEEE HRI (2021)</li>
+                    <li class="news_item"><strong>Microsoft PhD Fellowship Recipient</strong> (2019)</li>
+                    <li class="news_item"><strong>Best Paper Award Winner</strong>, ACM/IEEE HRI (2018)</li>
+                    <li class="news_item"><strong>NSF Graduate Research Fellowship Program Honorable Mention</strong>
+                        (2017)</li>
+                    <li class="news_item"><strong>HRI Pioneer</strong> (2017)</li>
+                    <li class="news_item"><strong>ACM SIGGRAPH Student Research Competition 1st Place</strong></li>
+                </ul>
+            </section>
+
+            <hr style="margin-bottom: 4rem; opacity: 0.1;">
+
+            <!-- Videos -->
+            <section id="videos" data-reveal>
+                <h1 class="section_header">Videos</h1>
+                <div class="carousel_container">
+                    <button class="carousel_btn prev" aria-label="Previous">&larr;</button>
+                    <div class="carousel_wrapper">
+                        <div class="carousel_track">
+                            <div class="video_slide">
+                                <iframe src="https://www.youtube.com/embed/gOTcZ4bK9Ao" title="Yale APOLLO Lab Research"
+                                    frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="video_slide">
+                                <iframe src="https://www.youtube.com/embed/A6SdyaIeTrU" title="Proxima" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="video_slide">
+                                <iframe src="https://www.youtube.com/embed/GGWh9HRuACM" title="Talking Robotics"
+                                    frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="video_slide">
+                                <iframe src="https://www.youtube.com/embed/AhsQFJzB8WQ" title="RelaxedIK"
+                                    frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="video_slide">
+                                <iframe src="https://www.youtube.com/embed/cGh0UncVxck" title="Bimanual" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="video_slide">
+                                <iframe src="https://www.youtube.com/embed/xvDwTJd8f4c" title="Autocam" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel_btn next" aria-label="Next">&rarr;</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Daniel Rakita. Yale University.</p>
+    </footer>
+
+    <div class="return_to_top">
+        <a href="#top">Top &uarr;</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
