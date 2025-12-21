@@ -133,6 +133,62 @@ document.addEventListener('DOMContentLoaded', () => {
                 pubContainer.innerHTML = '<p>Error loading publications. Please try again later.</p>';
             });
     }
+    // Dynamic News Loading
+    const newsContainer = document.getElementById('news_container');
+    const toggleNewsBtn = document.getElementById('toggle_news');
+
+    if (newsContainer && toggleNewsBtn) {
+        fetch('news.json')
+            .then(response => response.json())
+            .then(data => {
+                newsContainer.innerHTML = '';
+                const limit = 3;
+
+                data.forEach((item, index) => {
+                    const newsItem = document.createElement('div');
+                    newsItem.className = 'news_item';
+                    if (index >= limit) {
+                        newsItem.classList.add('hidden');
+                    }
+
+                    newsItem.innerHTML = `
+                        <span class="news_date">[${item.date}]</span> ${item.content}
+                    `;
+                    newsContainer.appendChild(newsItem);
+                });
+
+                if (data.length > limit) {
+                    toggleNewsBtn.style.display = 'block';
+                    let isExpanded = false;
+
+                    toggleNewsBtn.addEventListener('click', () => {
+                        isExpanded = !isExpanded;
+                        const hiddenItems = newsContainer.querySelectorAll('.news_item');
+
+                        hiddenItems.forEach((item, index) => {
+                            if (index >= limit) {
+                                if (isExpanded) {
+                                    item.classList.remove('hidden');
+                                } else {
+                                    item.classList.add('hidden');
+                                }
+                            }
+                        });
+
+                        toggleNewsBtn.textContent = isExpanded ? 'Show Less' : 'Show All News';
+
+                        if (!isExpanded) {
+                            // Smooth scroll back to news section top if collapsing
+                            document.getElementById('news').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error loading news:', error);
+                newsContainer.innerHTML = '<p>Error loading news.</p>';
+            });
+    }
 
     // Return to Top Button Logic
     const returnToTop = document.querySelector('.return_to_top');

@@ -216,10 +216,8 @@ nav ul {
     background: var(--yale-blue);
 }
 
-.about_me,
-.news,
-.publications {
-    margin-bottom: 5rem;
+section {
+    margin-bottom: 6rem;
 }
 
 /* News Section */
@@ -443,4 +441,32 @@ nav ul {
 
 .return_to_top a {
     color: white;
+}
+
+/* Toggle Button Styling */
+.toggle_btn {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.8rem 1.5rem;
+    background: transparent;
+    border: 2px solid var(--yale-blue);
+    color: var(--yale-blue);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.toggle_btn:hover {
+    background: var(--yale-blue);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.news_item.hidden {
+    display: none;
 }

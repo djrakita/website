@@ -61,6 +61,20 @@
         "category": "Conference Papers",
         "items": [
             {
+                "id": "C24",
+                "authors": "Liang, C., Wang, Q., Xu, A., <strong>Rakita, D.</strong>",
+                "year": "2025",
+                "title": "ad-trait: A fast and flexible automatic differentiation library in rust.",
+                "venue": "IROS"
+            },
+            {
+                "id": "C23",
+                "authors": "Hoffmeister, L.M., Scassellati, B., <strong>Rakita, D.</strong>",
+                "year": "2025",
+                "title": "A Language-based Approach for Zero-Knowledge Task Planning.",
+                "venue": "IROS"
+            },
+            {
                 "id": "C22",
                 "authors": "<strong>Rakita, D.</strong>, Liang, C.*, Wang, Q.*.",
                 "year": "2025",
