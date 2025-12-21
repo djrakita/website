@@ -229,24 +229,5 @@
                 "venue": "RO-MAN"
             }
         ]
-    },
-    {
-        "category": "Short Papers",
-        "items": [
-            {
-                "id": "S2",
-                "authors": "<strong>Rakita, D.</strong>",
-                "year": "2017",
-                "title": "Methods for Effective Mimicry-based Teleoperation of Robot Arms.",
-                "venue": "HRI Pioneers Workshop"
-            },
-            {
-                "id": "S1",
-                "authors": "<b>Rakita, D.</b>, Pejsa, T., Mutlu, B., and Gleicher, M.",
-                "year": "2015",
-                "title": "Inferring Gaze Shifts from Captured Body Motion.",
-                "venue": "SIGGRAPH Poster Proceedings"
-            }
-        ]
     }
 ]

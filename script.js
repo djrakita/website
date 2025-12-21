@@ -95,16 +95,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (!category.category || !category.items) return;
 
                     const categoryHeader = document.createElement('h2');
-                    categoryHeader.style.margin = '3rem 0 1rem';
+                    categoryHeader.style.margin = '2.5rem 0 1rem';
                     categoryHeader.textContent = category.category;
                     pubContainer.appendChild(categoryHeader);
 
                     const listDiv = document.createElement('div');
                     listDiv.className = 'publication_list';
 
-                    category.items.forEach(item => {
+                    // Define limits for specific categories
+                    let limit = Infinity;
+                    if (category.category.includes('Journal Articles')) limit = 3;
+                    if (category.category.includes('Conference Papers')) limit = 5;
+
+                    category.items.forEach((item, index) => {
                         const pubDiv = document.createElement('div');
                         pubDiv.className = 'publication';
+                        if (index >= limit) {
+                            pubDiv.classList.add('hidden');
+                        }
 
                         const pdfLink = item.pdf ? `
                             <a href="${item.pdf}" target="_blank" class="pdf_icon_link" title="Download PDF">
@@ -126,6 +134,36 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
 
                     pubContainer.appendChild(listDiv);
+
+                    // Add toggle button if items exceed limit
+                    if (category.items.length > limit) {
+                        const toggleBtn = document.createElement('button');
+                        toggleBtn.className = 'toggle_btn';
+                        toggleBtn.textContent = `Show All ${category.category}`;
+                        pubContainer.appendChild(toggleBtn);
+
+                        let isExpanded = false;
+                        toggleBtn.addEventListener('click', () => {
+                            isExpanded = !isExpanded;
+                            const items = listDiv.querySelectorAll('.publication');
+                            items.forEach((item, index) => {
+                                if (index >= limit) {
+                                    if (isExpanded) {
+                                        const delay = (index - limit) * 50; // slightly faster stagger for long lists
+                                        item.style.transitionDelay = `${delay}ms`;
+                                        item.classList.remove('hidden');
+                                    } else {
+                                        item.style.transitionDelay = '0ms';
+                                        item.classList.add('hidden');
+                                    }
+                                }
+                            });
+                            toggleBtn.textContent = isExpanded ? 'Show Less' : `Show All ${category.category}`;
+                            if (!isExpanded) {
+                                categoryHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }
+                        });
+                    }
                 });
             })
             .catch(error => {
@@ -163,13 +201,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     toggleNewsBtn.addEventListener('click', () => {
                         isExpanded = !isExpanded;
-                        const hiddenItems = newsContainer.querySelectorAll('.news_item');
+                        const allItems = newsContainer.querySelectorAll('.news_item');
 
-                        hiddenItems.forEach((item, index) => {
+                        allItems.forEach((item, index) => {
                             if (index >= limit) {
                                 if (isExpanded) {
+                                    // Stagger delay for each additional item
+                                    const delay = (index - limit) * 100; // 100ms stagger
+                                    item.style.transitionDelay = `${delay}ms`;
                                     item.classList.remove('hidden');
                                 } else {
+                                    // No delay when collapsing for a snappier feel
+                                    item.style.transitionDelay = '0ms';
                                     item.classList.add('hidden');
                                 }
                             }
