@@ -133,4 +133,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 pubContainer.innerHTML = '<p>Error loading publications. Please try again later.</p>';
             });
     }
+
+    // Return to Top Button Logic
+    const returnToTop = document.querySelector('.return_to_top');
+    if (returnToTop) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                returnToTop.classList.add('visible');
+            } else {
+                returnToTop.classList.remove('visible');
+            }
+        });
+    }
 });
