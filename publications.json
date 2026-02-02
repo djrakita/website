@@ -14,6 +14,14 @@
         "category": "Journal Articles",
         "items": [
             {
+                "id": "J7",
+                "authors": "Bader, J.M., Sun, X., Rosenfelt, T., Ramirez-Hardy, A., Vitchutripop, T., Srinivasan, A., Pantel, H., Khanna, A., and <strong>Rakita, D.</strong>",
+                "year": "2026",
+                "title": "Deep learning approach for critical exposure during division of the inferior mesenteric artery in colorectal surgery.",
+                "venue": "Journal of Robotic Surgery",
+                "pdf": "https://link.springer.com/article/10.1007/s11701-025-03121-7"
+            },
+            {
                 "id": "J6",
                 "authors": "Chamzas, C., Quintero, C., Kingston, Z., Orthey, A., <strong>Rakita, D.</strong>, Gleicher, M., Toussaint, M., Kavraki, L.",
                 "year": "2022",
