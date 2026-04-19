@@ -503,3 +503,105 @@ section {
     border-bottom-color: transparent;
     pointer-events: none;
 }
+
+/* Teaching Section */
+.teaching_intro {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    max-width: 800px;
+}
+
+.teaching_courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.course_card {
+    background: white;
+    border-left: 4px solid var(--yale-blue);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-smooth);
+}
+
+.course_card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.course_number {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--yale-blue-light);
+    margin-bottom: 0.5rem;
+}
+
+.course_title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--yale-blue);
+    margin-bottom: 0.75rem;
+}
+
+.course_desc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.teaching_viz_block {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.teaching_viz_title {
+    font-size: 1.3rem;
+    color: var(--yale-blue);
+    margin-bottom: 0.75rem;
+}
+
+.teaching_viz_caption {
+    font-size: 0.97rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+}
+
+.teaching_viz_frame {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    background: #f4f8ff;
+}
+
+.teaching_viz_frame iframe {
+    width: 100%;
+    height: 560px;
+    border: none;
+    display: block;
+}
+
+@media screen and (max-width: 900px) {
+    .teaching_courses {
+        grid-template-columns: 1fr;
+    }
+
+    .teaching_viz_frame iframe {
+        height: 420px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .teaching_viz_frame iframe {
+        height: 320px;
+    }
+}
