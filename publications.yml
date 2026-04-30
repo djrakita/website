@@ -1,0 +1,175 @@
+- title: Deep learning approach for critical exposure during division of the inferior
+    mesenteric artery in colorectal surgery
+  authors: Bader, J.M., Sun, X., Rosenfelt, T., Ramirez-Hardy, A., Vitchutripop, T.,
+    Srinivasan, A., Pantel, H., Khanna, A., and Rakita, D.
+  type: Journal
+  venue: Journal of Robotic Surgery
+  year: 2026
+  link: https://link.springer.com/article/10.1007/s11701-025-03121-7
+- title: 'MOTIONBENCHMAKER: A Tool to Generate and Benchmark Motion Planning Datasets'
+  authors: Chamzas, C., Quintero, C., Kingston, Z., Orthey, A., Rakita, D., Gleicher,
+    M., Toussaint, M., Kavraki, L.
+  type: Journal
+  venue: RA-L/ICRA
+  year: 2022
+- title: Single Query Path Planning using Sample Efficient Probability Informed Trees
+  authors: Rakita, D., Mutlu, B., Gleicher, M.
+  type: Journal
+  venue: RA-L/ICRA
+  year: 2021
+- title: 'An Analysis of RelaxedIK: An Optimization-Based Framework for Generating
+    Accurate and Feasible Robot Arm Motions'
+  authors: Rakita, D., Mutlu, B., Gleicher, M.
+  type: Journal
+  venue: Autonomous Robotics (AURO)
+  year: 2020
+- title: Shared-Control-Based Bimanual Robot Manipulation
+  authors: Rakita, D., Mutlu, B., Gleicher, M., and Hiatt, L.
+  type: Journal
+  venue: Science Robotics
+  year: 2019
+- title: A Flexible Optimization-Based Method for Synthesizing Intent-Expressive Robot
+    Arm Motion
+  authors: Bodden, C., Rakita, D., Mutlu, B., and Gleicher, M.
+  type: Journal
+  venue: The International Journal of Robotics Research (IJRR). SAGE
+  year: 2018
+- title: Authoring directed gaze for full-body motion capture
+  authors: Pejsa, T., Rakita, D., Mutlu, B., & Gleicher, M.
+  type: Journal
+  venue: ACM Transactions on Graphics, 35(6), 1–11. Proceedings SIGGRAPH ASIA 2016
+  year: 2016
+- title: 'Turning Stale Gradients into Stable Gradients: Coherent Coordinate Descent
+    with Implicit Landscape Smoothing for Lightweight Zeroth-Order Optimization'
+  authors: Liang, C., Wang, Q., Xu, A., Rakita, D.
+  type: Conference
+  venue: ICML
+  year: 2026
+- title: 'ad-trait: A fast and flexible automatic differentiation library in rust'
+  authors: Liang, C., Wang, Q., Xu, A., Rakita, D.
+  type: Conference
+  venue: IROS
+  year: 2025
+- title: A Language-based Approach for Zero-Knowledge Task Planning
+  authors: Hoffmeister, L.M., Scassellati, B., Rakita, D.
+  type: Conference
+  venue: IROS
+  year: 2025
+- title: Coherance-based Approximate Derivatives via Web of Affine Spaces Optimization
+  authors: Rakita, D., Liang, C.*, Wang, Q.*.
+  type: Conference
+  venue: RSS
+  year: 2025
+- title: Dynamic Rank Adjustment in Diffusion Policies for Efficient and Flexible
+    Training
+  authors: Sun, X., Chen, Y., Fan, F., Lian, Y., and Rakita, D..
+  type: Conference
+  venue: RSS
+  year: 2025
+- title: Sequential Discrete Action Selection via Blocking Conditions and Resolutions
+  authors: Hoffmeister, L.M., Scassellati, B., Rakita, D.
+  type: Conference
+  venue: IROS
+  year: 2024
+- title: An Analysis of Unified Manipulation with Robot Arms and Dexterous Hands via
+    Optimization-based Motion Synthesis
+  authors: Patel, V., Rakita, D., and Dollar, A.
+  type: Conference
+  venue: ICRA
+  year: 2023
+- title: 'RangedIK: An Optimization-Based Robot Motion Generation Method for Ranged-Goal
+    Tasks'
+  authors: Wang, Y., Praveena, P., Rakita, D., and Gleicher, M.
+  type: Conference
+  venue: ICRA
+  year: 2023
+- title: 'Lively: Enabling Multimodal, Lifelike, and Extensible Real-time Robot Motion'
+  authors: Schoen, A., Sullivan, D., Zhang, Z., Rakita, D., and Mutlu, M.
+  type: Conference
+  venue: HRI
+  year: 2023
+- title: 'Proxima: An Approach for Time or Accuracy Budgeted Collision Proximity Queries'
+  authors: Rakita, D., Mutlu, B., and Gleicher, M.
+  type: Conference
+  venue: RSS
+  year: 2022
+- title: 'CollisionIK: A Per-Instant Pose Optimization Method for Generating Robot
+    Motions'
+  authors: Rakita, D., Shi, H., Mutlu, B., and Gleicher, M.
+  type: Conference
+  venue: ICRA
+  year: 2021
+- title: 'Strobe: An Acceleration Meta-algorithm for Optimizing Robot Paths using
+    Concurrent Interleaved Sub-Epoch Pods'
+  authors: Rakita, D., Mutlu, B., and Gleicher, M.
+  type: Conference
+  venue: ICRA
+  year: 2021
+- title: Effects of Onset Latency and Robot Speed Delays on Mimicry-Control Teleoperation
+  authors: Rakita, D., Mutlu, B., and Gleicher, M.
+  type: Conference
+  venue: HRI
+  year: 2020
+- title: Supporting Perception of Weight through Motion-induced Sensory Conflicts
+    in Robot Teleoperation
+  authors: Praveena, P., Rakita, D., Mutlu, B., and Gleicher, M.
+  type: Conference
+  venue: HRI
+  year: 2020
+- title: Remote Telemanipulation with Adapting Viewpoints in Visually Complex Environments
+  authors: Rakita, D., Mutlu, B., and Gleicher, M.
+  type: Conference
+  venue: RSS
+  year: 2019
+- title: 'Stampede: A Discrete-Optimization Method for Solving Pathwise-Inverse Kinematics'
+  authors: Rakita, D., Mutlu, B., and Gleicher, M.
+  type: Conference
+  venue: ICRA
+  year: 2019
+- title: User-Guided Offline Synthesis of Robot Arm Motion from 6- DoF Paths
+  authors: Praveena, P., Rakita, D., Mutlu, B., and Gleicher, M.
+  type: Conference
+  venue: ICRA
+  year: 2019
+- title: 'RelaxedIK: Real-time Synthesis of Accurate and Feasible Robot Arm Motion'
+  authors: Rakita, D., Mutlu, B., and Gleicher, M.
+  type: Conference
+  venue: RSS
+  year: 2018
+- title: An Autonomous Dynamic Camera Method for Effective Remote Teleoperation
+  authors: Rakita, D., Mutlu, B., and Gleicher, M.
+  type: Conference
+  venue: HRI
+  year: 2018
+- title: 'Shared Dynamic Curves: A Shared-Control Telemanipulation Method for Motor
+    Task Training'
+  authors: Rakita, D., Mutlu, B., Gleicher, M., and Hiatt, L.
+  type: Conference
+  venue: HRI
+  year: 2018
+- title: A Motion Retargeting Method for Effective Mimicry-based Teleoperation of
+    Robot Arms
+  authors: Rakita, D., Mutlu, B., and Gleicher, M.
+  type: Conference
+  venue: HRI
+  year: 2017
+- title: Understanding Human-Robot Interaction in Virtual Reality
+  authors: Liu, O., Rakita, D., Mutlu, B., and Gleicher, M.
+  type: Conference
+  venue: RO-MAN
+  year: 2017
+- title: Recognizing Actions during Tactile Manipulations through Force Sensing
+  authors: Subramani, G., Rakita, D., Wang H., Zinn, M., Gleicher, M.
+  type: Conference
+  venue: IROS
+  year: 2017
+- title: Motion Synopsis for Robot Arm Trajectories
+  authors: Rakita, D., Mutlu, B., and Gleicher, M.
+  type: Conference
+  venue: RO-MAN
+  year: 2016
+- title: Evaluating Intent-Expressive Robot Arm Motion
+  authors: Bodden, C., Rakita, D., Mutlu, B., and Gleicher, M.
+  type: Conference
+  venue: RO-MAN
+  year: 2016

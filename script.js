@@ -85,12 +85,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dynamic Publications Loading
     const pubContainer = document.getElementById('publications_container');
     if (pubContainer) {
-        fetch('publications.json')
-            .then(response => response.json())
+        fetch('publications.yml')
+            .then(response => response.text())
+            .then(text => jsyaml.load(text))
             .then(data => {
                 pubContainer.innerHTML = ''; // Clear loading message
 
-                data.forEach(category => {
+                // Group by type (Apollo lab format uses 'type')
+                const groupedData = {};
+                data.forEach(item => {
+                    if (!item.type) return;
+                    let catName = item.type === 'Journal' ? 'Journal Articles' : 
+                                 (item.type === 'Conference' ? 'Conference Papers' : item.type + 's');
+                    if (!groupedData[catName]) {
+                        groupedData[catName] = [];
+                    }
+                    groupedData[catName].push(item);
+                });
+
+                const categories = Object.keys(groupedData).map(cat => ({
+                    category: cat,
+                    items: groupedData[cat]
+                }));
+
+                categories.forEach(category => {
                     // Skip objects that are not publication categories (like the comment/example object)
                     if (!category.category || !category.items) return;
 
@@ -114,8 +132,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             pubDiv.classList.add('hidden');
                         }
 
-                        const pdfLink = item.pdf ? `
-                            <a href="${item.pdf}" target="_blank" class="pdf_icon_link" title="Download PDF">
+                        const pdfLink = item.link ? `
+                            <a href="${item.link}" target="_blank" class="pdf_icon_link" title="Download PDF">
                                 <svg class="pdf_icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                                     <polyline points="14 2 14 8 20 8"></polyline>
@@ -126,9 +144,20 @@ document.addEventListener('DOMContentLoaded', () => {
                             </a>
                         ` : '<div class="pdf_placeholder"></div>';
 
+                        // Compute ID: e.g. [J<num>] or [C<num>]
+                        let idPrefix = '';
+                        if (category.category === 'Journal Articles') idPrefix = 'J';
+                        else if (category.category === 'Conference Papers') idPrefix = 'C';
+                        
+                        let idStr = '';
+                        if (idPrefix) {
+                            const num = category.items.length - index;
+                            idStr = `[${idPrefix}${num}] `;
+                        }
+
                         pubDiv.innerHTML = `
                             ${pdfLink}
-                            <span>[${item.id}] ${item.authors} ${item.year}. ${item.title} <em>${item.venue}</em>.</span>
+                            <span>${idStr}${item.authors} (${item.year}). ${item.title} <em>${item.venue ? item.venue : ''}</em>.</span>
                         `;
                         listDiv.appendChild(pubDiv);
                     });
@@ -176,8 +205,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleNewsBtn = document.getElementById('toggle_news');
 
     if (newsContainer && toggleNewsBtn) {
-        fetch('news.json')
-            .then(response => response.json())
+        fetch('news.yml')
+            .then(response => response.text())
+            .then(text => jsyaml.load(text))
             .then(data => {
                 newsContainer.innerHTML = '';
                 const limit = 3;
