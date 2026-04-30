@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Group by type (Apollo lab format uses 'type')
                 const groupedData = {};
                 data.forEach(item => {
-                    if (!item.type) return;
+                    if (!item.type || item.type === 'Preprint') return; // Skip Preprints
                     let catName = item.type === 'Journal' ? 'Journal Articles' : 
                                  (item.type === 'Conference' ? 'Conference Papers' : item.type + 's');
                     if (!groupedData[catName]) {
