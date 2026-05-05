@@ -224,6 +224,7 @@
   threads:
   - Motion Generation Algorithms
   year: 2023
+  award: Best Paper Award Winner
   link: https://peopleandrobots.wisc.edu/wp-content/uploads/sites/1469/2023/03/HRI_2023_Schoen_Sullivan_Lively.pdf
 - title: 'PROXIMA: An Approach for Time or Accuracy Budgeted Collision Proximity Queries'
   authors: Daniel Rakita, Bilge Mutlu, Michael Gleicher
@@ -257,6 +258,7 @@
   type: Conference
   venue: HRI
   year: 2020
+  award: Best Paper Award Nominee
 - title: Remote Telemanipulation with Adapting Viewpoints in Visually Complex Environments
   authors: Rakita, D., Mutlu, B., and Gleicher, M.
   type: Conference
@@ -282,6 +284,7 @@
   type: Conference
   venue: HRI
   year: 2018
+  award: Best Paper Award Winner
 - title: 'Shared Dynamic Curves: A Shared-Control Telemanipulation Method for Motor
     Task Training'
   authors: Rakita, D., Mutlu, B., Gleicher, M., and Hiatt, L.
@@ -314,4 +317,5 @@
   type: Conference
   venue: RO-MAN
   year: 2016
+  award: Best Paper Nominee
 

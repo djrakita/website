@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dynamic Publications Loading
     const pubContainer = document.getElementById('publications_container');
     if (pubContainer) {
-        fetch('publications.yml')
+        fetch('data/publications.yml')
             .then(response => response.text())
             .then(text => jsyaml.load(text))
             .then(data => {
@@ -155,9 +155,18 @@ document.addEventListener('DOMContentLoaded', () => {
                             idStr = `[${idPrefix}${num}] `;
                         }
 
+                        let awardSuffix = '';
+                        if (item.award) {
+                            if (item.award.toLowerCase().includes('winner') || item.award.toLowerCase().includes('1st')) {
+                                awardSuffix = ` <span class="award_icon trophy"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.2 4H18V2H6v2H3.8C2.8 4 2 4.8 2 5.8v2.4c0 3.1 2.3 5.7 5.3 6 1.1 2.6 3.7 4.4 6.7 4.4s5.6-1.8 6.7-4.4c3-.3 5.3-2.9 5.3-6V5.8C26 4.8 25.2 4 24.2 4zM6 12.2c-2-.3-3.6-2.1-3.6-4.2V6h3.6v6.2zM21.6 8c0 2.1-1.6 3.9-3.6 4.2V6h3.6v2zM12 20c-1.8 0-3.3-1-4.2-2.5h8.4c-.9 1.5-2.4 2.5-4.2 2.5zM8 22h8v2H8z" transform="scale(0.85) translate(2,2)"/></svg></span><strong style="color: #B43232;">${item.award}</strong>`;
+                            } else {
+                                awardSuffix = ` <span class="award_icon medal"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 15.2l-3.5 2.1.9-4-3.1-2.7 4.1-.3L12 6.6l1.6 3.7 4.1.3-3.1 2.7.9 4-3.5-2.1zM2 2h4l4.5 9-1.5 3L2 2zm16 0h4l-7 12-1.5-3L18 2z"/></svg></span><strong style="color: #B43232;">${item.award}</strong>`;
+                            }
+                        }
+
                         pubDiv.innerHTML = `
                             ${pdfLink}
-                            <span>${idStr}${item.authors} (${item.year}). ${item.title} <em>${item.venue ? item.venue : ''}</em>.</span>
+                            <span>${idStr}${item.authors} (${item.year}). <strong>${item.title}</strong> <em>${item.venue ? item.venue : ''}</em>.${awardSuffix}</span>
                         `;
                         listDiv.appendChild(pubDiv);
                     });
@@ -205,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleNewsBtn = document.getElementById('toggle_news');
 
     if (newsContainer && toggleNewsBtn) {
-        fetch('news.yml')
+        fetch('data/news.yml')
             .then(response => response.text())
             .then(text => jsyaml.load(text))
             .then(data => {

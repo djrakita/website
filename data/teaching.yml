@@ -1,0 +1,41 @@
+- course: CPSC 487/587 3D Spatial Modeling and Computing
+  university: Yale University
+  role: course I designed
+  description: Several areas of computer science and related fields must model and
+    compute how objects are situated in three-dimensional space over time... This
+    course will teach students how to computationally model the spatial configuration
+    of and spatial relationships between objects over time.
+  offerings:
+  - 'Spring 2024. Course Rating: 4.5/5.0'
+- course: CPSC 485/585 Applied Planning and Optimization
+  university: Yale University
+  role: course I designed
+  description: This course introduces students to concepts, algorithms, and programming
+    techniques pertaining to planning and optimization...
+  offerings:
+  - 'Spring 2023. Course Rating: 4.5/5.0'
+  - 'Fall 2023. Course Rating: 4.5/5.0'
+- course: CPSC 685 Topics on Robot Motion Generation
+  university: Yale University
+  role: course I designed
+  description: This course focuses on concepts, approaches, and algorithms related
+    to robot motion generation. Students will read, summarize, present on, and discuss
+    papers and textbook chapters related to search-based path planning, sampling-based
+    path planning, inverse kinematics, and trajectory optimization.
+  offerings:
+  - 'Fall 2022. Course Rating: 4.8/5.0'
+- course: CPSC 472 Intelligent Robotics
+  university: Yale University
+  role: Guest Lecture
+  offerings:
+  - Fall 2022
+- course: CS/ Psych 770 Human-Computer Interaction
+  university: University of Wisconsin-Madison
+  role: Guest Lecture
+  offerings:
+  - Spring 2020
+- course: CS 559 Introduction to Computer Graphics
+  university: University of Wisconsin-Madison
+  role: Guest Lecture
+  offerings:
+  - Spring 2019

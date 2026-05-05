@@ -1,0 +1,210 @@
+\documentclass[<% if condensed %>10pt<% else %>11pt<% endif %>, letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{AlegreyaSans}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[margin=<% if condensed %>0.6in<% else %>1in<% endif %>]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{datetime}
+\usepackage{needspace}
+\usepackage{graphicx}
+
+\definecolor{primary}{RGB}{0, 53, 107} % Yale Blue
+\definecolor{darkgray}{RGB}{60, 60, 60}
+\definecolor{lightgray}{RGB}{120, 120, 120}
+\definecolor{gold}{RGB}{184, 134, 11} % Darker gold for better contrast
+\definecolor{silver}{RGB}{105, 105, 105} % Darker silver
+\definecolor{awardcolor}{RGB}{0, 53, 107} % Match Yale Blue for consistency
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    filecolor=primary,      
+    urlcolor=primary,
+    pdftitle={<< name >> - Curriculum Vitae},
+}
+
+% Customize section formatting
+\titleformat{\section}{\Large\sffamily\bfseries\color{primary}}{}{0em}{}[\titlerule\vspace{1ex}\nobreak]
+\titlespacing{\section}{0pt}{<% if condensed %>1.5ex<% else %>3ex<% endif %>}{<% if condensed %>0.5ex<% else %>1.5ex<% endif %>}
+
+\titleformat{\subsection}{\large\sffamily\bfseries\color{darkgray}}{}{0em}{\MakeUppercase\nobreak}
+\titlespacing{\subsection}{0pt}{<% if condensed %>1ex<% else %>2ex<% endif %>}{<% if condensed %>0.5ex<% else %>1ex<% endif %>}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% Header
+{\LARGE\sffamily\bfseries\color{primary} << name >>} \hfill {\large\fontseries{l}\selectfont Curriculum Vitae --- \monthname\ \the\year} \\[0.5em]
+{\large\fontseries{m}\selectfont \smash{\includegraphics[height=1.2em]{/Users/dannyrakita/Documents/website/imgs/Yale_Bulldogs_logo.svg.png}}\hspace{0.5em}<< organization >>} \\
+{\fontseries{l}\selectfont << address >>} \\[0.5em]
+\textbf{\color{primary}\faEnvelope} \href{mailto:<< email >>}{<< email >>} \\
+\textbf{\color{primary}\faGlobe} \href{<< website >>}{<< website >>} \\
+\textbf{\color{primary}\faFlask} \href{<< lab_website >>}{<< lab_website >>} \\
+\textbf{\color{primary}\faGraduationCap} \href{<< google_scholar >>}{Google Scholar}
+
+\vspace{1.5em}
+
+<% if research_interests %>
+\needspace{10\baselineskip}
+\section*{Research Mission}
+<< research_interests >>
+<% endif %>
+
+<% if experience %>
+\needspace{5\baselineskip}
+\section*{Appointments}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+<% for exp in experience %>
+{\fontseries{l}\selectfont << exp.dates >>} & \textbf{<< exp.title >>} \newline
+{\fontseries{m}\selectfont << exp.organization >>} \\[<% if condensed %>0.2em<% else %>0.5em<% endif %>]
+<% endfor %>
+\end{longtable}
+<% endif %>
+
+<% if education %>
+\needspace{5\baselineskip}
+\section*{Education}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+<% for edu in education %>
+{\fontseries{l}\selectfont << edu.year >>} & \textbf{<< edu.degree >>} \newline
+{\fontseries{m}\selectfont << edu.university >>} <% if edu.advisors %>\newline \textit{Advisors: << edu.advisors >>}<% endif %> \\[<% if condensed %>0.2em<% else %>0.5em<% endif %>]
+<% endfor %>
+\end{longtable}
+<% endif %>
+
+<% if awards %>
+\needspace{5\baselineskip}
+\section*{<< titles.awards >>}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+<% for award in awards %>
+{\fontseries{l}\selectfont << award.year >>} & << award.title >><% if award.venue %>, \textit{<< award.venue >>}<% endif %> \\[<% if condensed %>0.2em<% else %>0.5em<% endif %>]
+<% endfor %>
+\end{longtable}
+<% endif %>
+
+<% if funding %>
+\needspace{5\baselineskip}
+\section*{<< titles.funding >>}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+<% for fund in funding %>
+{\fontseries{l}\selectfont << fund.dates >>} & \textbf{<< fund.title >>} (<< fund.agency >>) \newline
+<% if fund.role %>Role: << fund.role >><% endif %><% if fund.role and fund.amount %>, <% endif %><% if fund.amount %>Amount: << fund.amount >><% endif %> <% if fund.notes %>\newline \textit{<< fund.notes >>}<% endif %> \\[<% if condensed %>0.2em<% else %>0.5em<% endif %>]
+<% endfor %>
+\end{longtable}
+<% endif %>
+
+<% if publications_by_type %>
+\needspace{12\baselineskip}
+\section*{<< titles.publications >>}
+<% for ptype, pubs in publications_by_type.items() %>
+\needspace{8\baselineskip}
+\subsection*{<< ptype >>}
+\begin{longtable}{@{} p{1.5cm} p{\dimexpr\textwidth-2cm\relax} @{}}
+<% for pub in pubs %>
+{\fontseries{l}\selectfont << pub.display_year >>} & << pub.authors >> << pub.title >>. <% if pub.venue %>\textit{<< pub.venue >>}.<% endif %>
+<% if pub.link %>\href{<< pub.link >>}{[Link]}<% endif %>
+<% if pub.award %>
+    \newline
+    <% if 'winner' in pub.award.lower() or '1st' in pub.award.lower() %>
+        \textbf{\color{awardcolor}{\color{gold}\faTrophy} << pub.award >>}
+    <% else %>
+        \textbf{\color{awardcolor}{\color{silver}\faMedal} << pub.award >>}
+    <% endif %>
+<% endif %> \\[<% if condensed %>0.2em<% else %>0.5em<% endif %>]
+<% endfor %>
+\end{longtable}
+<% endfor %>
+<% endif %>
+
+<% if talks %>
+\needspace{10\baselineskip}
+\section*{<< titles.invited_talks >>}
+\begin{longtable}{@{} p{1.5cm} p{\dimexpr\textwidth-2cm\relax} @{}}
+<% for talk in talks %>
+{\fontseries{l}\selectfont << talk.year >>} & \textit{<< talk.title >>}. \newline << talk.venue >> \\[<% if condensed %>0.2em<% else %>0.5em<% endif %>]
+<% endfor %>
+\end{longtable}
+<% endif %>
+
+<% if teaching %>
+\needspace{10\baselineskip}
+\section*{<< titles.teaching >>}
+\begin{itemize}[leftmargin=0pt, label={}, itemsep=0.5em]
+<% for teach in teaching %>
+    \item \textbf{<< teach.course >>}, << teach.university >> <% if teach.role %>\hfill \textit{<< teach.role >>}<% endif %>
+    <% if teach.description %>\newline << teach.description >><% endif %>
+    <% if teach.offerings %>
+        <% if condensed %>
+            --- << teach.offerings | join(', ') >>
+        <% else %>
+            \begin{itemize}[leftmargin=1.5em, label={--}, topsep=2pt, partopsep=0pt, itemsep=0pt, parsep=0pt]
+            <% for off in teach.offerings %>
+                \item << off >>
+            <% endfor %>
+            \end{itemize}
+            \vspace{0.5em}
+        <% endif %>
+    <% endif %>
+<% endfor %>
+\end{itemize}
+<% endif %>
+
+<% if advising %>
+\needspace{12\baselineskip}
+\section*{<< titles.advising >>}
+<% for adv_category in advising %>
+\needspace{8\baselineskip}
+\subsection*{<< adv_category.category >>}
+<% if adv_category.is_inline %>
+<< adv_category.inline_text >>
+\vspace{1em}
+<% else %>
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+<% for student in adv_category.students %>
+{\fontseries{l}\selectfont <% if student.display_dates %><< student.display_dates >><% endif %>} & << student.name >> <% if student.project %>, \textit{<< student.project >>}<% endif %> \\[<% if condensed %>0.2em<% else %>0.5em<% endif %>]
+<% endfor %>
+\end{longtable}
+<% endif %>
+<% endfor %>
+<% endif %>
+
+<% if service %>
+\needspace{10\baselineskip}
+\section*{<< titles.service >>}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+<% for srv in service %>
+{\fontseries{l}\selectfont << srv.dates >>} & \textbf{<< srv.role >>}, << srv.venue >> \\[<% if condensed %>0.2em<% else %>0.5em<% endif %>]
+<% endfor %>
+\end{longtable}
+<% endif %>
+
+<% if media %>
+\needspace{8\baselineskip}
+\section*{<< titles.media >>}
+\begin{itemize}[leftmargin=0pt, label={}, itemsep=0.5em]
+<% for m in media %>
+    \item \textbf{<< m.outlet >>} --- \textit{<< m.title >>}
+<% endfor %>
+\end{itemize}
+<% endif %>
+
+<% if skills %>
+\needspace{8\baselineskip}
+\section*{Technical Skills}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+<% for skill in skills %>
+\textbf{<< skill.category >>} & << skill.skills >> \\[<% if condensed %>0.2em<% else %>0.5em<% endif %>]
+<% endfor %>
+\end{longtable}
+<% endif %>
+
+\end{document}

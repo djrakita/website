@@ -1,0 +1,103 @@
+- category: Ph.D. Students
+  students:
+  - name: Liam Merz Hoffmeister
+    dates: '2023 - '
+  - name: Xiatao Sun
+    dates: '2023 - '
+  - name: Chen Liang
+    dates: '2024 - '
+  - name: TJ Vitchutripop
+    dates: '2024 - '
+  - name: Peter Wang
+    dates: '2024 - '
+  - name: Roshan Klein-Seetharaman
+    dates: '2025 - '
+- category: Masters Students
+  students:
+  - name: Alan Li
+    dates: '2024 - 2025'
+  - name: Yinliang Chen
+    dates: '2024 - 2025'
+- category: Undergraduate Students
+  students:
+  - name: Juliette Garcia
+    dates: '2025 - '
+  - name: Wenhe Zhang
+    dates: '2025 - '
+  - name: Alex Wa
+    dates: '2025 - '
+  - name: Andy Xu
+    dates: '2025 - '
+  - name: Braeden Cullen
+    dates: '2025 - '
+  - name: Derek Gao
+    dates: '2025 - '
+  - name: Felicia Zheng
+    dates: '2025 - '
+  - name: Jack Yin
+    dates: '2025 - '
+  - name: Tim Li
+    dates: '2025 - '
+  - name: Ian Lim
+    dates: '2024 - '
+  - name: Andrew Fu
+    dates: '2024 - '
+  - name: Ryan Jin
+    dates: '2024 - '
+  - name: Blaze Goldstein
+    dates: '2024 - '
+  - name: Anand Srinivasan
+    dates: '2024 - '
+  - name: Haroon Mohamedali
+    dates: '2024 - '
+  - name: Richard Xue
+    dates: '2024 - '
+  - name: Byron Li
+    dates: '2024 - '
+  - name: Griffin Thompson
+    dates: '2024 - '
+  - name: Roshan Klein-Seetharaman
+    dates: '2024 - '
+  - name: Francis Fan
+    dates: '2023 - '
+  - name: Jack Chen
+    dates: '2023 - '
+  - name: Ryan Tsai
+    dates: '2023 - '
+  - name: Sem Asmelash
+    dates: 2022 - 2024
+  - name: Sophie Usherwood
+    dates: 2022 - 2023
+- category: Senior Thesis Advising
+  students:
+  - name: Anand Srinivasan
+    project: 'Positioning a Stapler in 3D Space: Metric Generation for Robotic Surgery'
+    dates: Spring 2025
+  - name: Henry Berger
+    project: Ergodic Footfall-Based Active Mapping with a Quadruped Robot (co-advised
+      with Ian Abraham)
+    dates: Spring 2025
+  - name: Michal Lewkowicz
+    project: Towards Realistic Simulation and Benchmarking of Learning and Optimization
+      Algorithms for Social Robot Navigation
+    dates: Spring 2025
+  - name: Peter Messina
+    project: Enhancing Robotics Visualization and Simulation in the APOLLO Toolbox
+    dates: Spring 2025
+  - name: Griffin Thompson
+    project: 'From Skeletal Motion to Conformal Geometric Algebra: A Novel Approach
+      to Human Motion Modeling'
+    dates: Fall 2024
+  - name: Ryan Tsai
+    project: Real-World Motion Planning and Optimization Using Markerless Localization
+    dates: Fall 2024
+  - name: Anand Srinivasan
+    project: 3D Scene Reconstruction for IMA Division Surgery
+    dates: Fall 2024
+  - name: Roshan Klein-Seetharaman
+    project: Efficient Spatial Representations using Geometric Algebra for Robot Learning
+    dates: Fall 2024
+  - name: Chris Ward
+    project: 'Revitalizing Stained Glass: Improving the Profitability of Stained Glass
+      by Applying Modern Manufacturing Techniques (co-advised with Ian Abraham)'
+    dates: Spring 2024

@@ -605,3 +605,78 @@ section {
         height: 320px;
     }
 }
+
+/* CV Section Styling */
+.cv_link {
+    display: block;
+    line-height: 0;
+}
+
+.cv_image {
+    width: 140px;
+    height: auto;
+    border: 1px solid rgba(0, 53, 107, 0.1);
+    border-radius: 6px;
+    padding: 6px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: center;
+}
+
+.cv_image:hover {
+    transform: scale(1.08) translateY(-5px) rotate(1deg);
+    box-shadow: 0 15px 35px rgba(0, 53, 107, 0.15);
+    border-color: var(--yale-blue);
+    cursor: pointer;
+}
+
+/* Award Icons */
+.award_icon {
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.award_icon.trophy {
+    color: #D4AF37; /* Gold */
+}
+
+.award_icon.medal {
+    color: #969696; /* Silver */
+}
+
+/* Tooltip for awards */
+.tooltip {
+    position: relative;
+    cursor: help;
+}
+
+.tooltip::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-5px);
+    background: rgba(0, 34, 68, 0.9); /* yale-blue-dark */
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, transform 0.2s;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}

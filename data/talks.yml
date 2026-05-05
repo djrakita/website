@@ -1,0 +1,35 @@
+- venue: Rust for Robotics Workshop, ICRA
+  title: 'The Applied Planning, Learning, and Optimization Toolbox: A Flexible Rust-Based
+    Software Suite for Robotics Research'
+  year: '2025'
+- venue: Cornell University
+  title: Intuitive Robot Shared-Control Interfaces via Real-time Motion Planning and
+    Optimization
+  year: '2022'
+- venue: Workshop on Bimanual Manipulation, ICRA
+  title: Generating Accurate, Feasible, and Coordinated Bimanual Robot Motions in
+    Real-time
+  year: '2022'
+- venue: KavrakiLab, Rice University
+  title: Methods and Applications for Generating Accurate and Feasible Robot-arm Motions
+    in Real-time
+  year: '2021'
+- venue: Talking-Robotics Series
+  title: Methods and Applications for Generating Accurate and Feasible Robot-arm Motions
+    in Real-time
+  year: '2021'
+- venue: Northwestern University
+  title: Methods and Applications for Generating Accurate and Feasible Robot-arm Motions
+    in Real-time
+  year: '2020'
+- venue: AI and Its Alternatives for Shared Autonomy in Assistive and Collaborative
+    Robotics Workshop, RSS
+  title: Robust Human-Arm to Robot-Arm Motion Remapping in Real-time for Effective
+    Shared-Control Telemanipulation Methods
+  year: '2019'
+- venue: UW-Madison Computer Science Student Symposium
+  title: Effective Methods for Robot Telemanipulation
+  year: '2019'
+- venue: Naval Research Lab
+  title: Effective Methods for Robot Teleoperation
+  year: '2017'
