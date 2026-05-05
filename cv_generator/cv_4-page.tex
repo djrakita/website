@@ -1,0 +1,217 @@
+\documentclass[10pt, letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{AlegreyaSans}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{datetime}
+\usepackage{needspace}
+\usepackage{graphicx}
+
+\definecolor{primary}{RGB}{0, 53, 107} % Yale Blue
+\definecolor{darkgray}{RGB}{60, 60, 60}
+\definecolor{lightgray}{RGB}{120, 120, 120}
+\definecolor{gold}{RGB}{184, 134, 11} % Darker gold for better contrast
+\definecolor{silver}{RGB}{105, 105, 105} % Darker silver
+\definecolor{awardcolor}{RGB}{0, 53, 107} % Match Yale Blue for consistency
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    filecolor=primary,      
+    urlcolor=primary,
+    pdftitle={Daniel Rakita - Curriculum Vitae},
+}
+
+% Customize section formatting
+\titleformat{\section}{\Large\sffamily\bfseries\color{primary}}{}{0em}{}[\titlerule\vspace{1ex}\nobreak]
+\titlespacing{\section}{0pt}{1.5ex}{0.5ex}
+
+\titleformat{\subsection}{\large\sffamily\bfseries\color{darkgray}}{}{0em}{\MakeUppercase\nobreak}
+\titlespacing{\subsection}{0pt}{1ex}{0.5ex}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% Header
+{\LARGE\sffamily\bfseries\color{primary} Daniel Rakita} \hfill {\large\fontseries{l}\selectfont Curriculum Vitae --- \monthname\ \the\year} \\[0.5em]
+{\large\fontseries{m}\selectfont \smash{\includegraphics[height=1.2em]{/Users/dannyrakita/Documents/website/imgs/Yale_Bulldogs_logo.svg.png}}\hspace{0.5em}Yale University, Department of Computer Science} \\
+{\fontseries{l}\selectfont 123 Main St, New Haven, CT 06520 USA} \\[0.5em]
+\textbf{\color{primary}\faEnvelope} \href{mailto:daniel.rakita@yale.edu}{daniel.rakita@yale.edu} \\
+\textbf{\color{primary}\faGlobe} \href{https://dannyrakita.com}{https://dannyrakita.com} \\
+\textbf{\color{primary}\faFlask} \href{https://apollo-lab-yale.github.io/}{https://apollo-lab-yale.github.io/} \\
+\textbf{\color{primary}\faGraduationCap} \href{https://scholar.google.com/citations?user=1Y-cnCUAAAAJ&hl=en}{Google Scholar}
+
+\vspace{1.5em}
+
+\needspace{10\baselineskip}
+\section*{Research Mission}
+My research primarily involves formulating planning, optimization, and learning algorithms that allow robot manipulation platforms to effectively complete tasks. The goal of my work is to enable people to intuitively control or work alongside robot manipulation platforms to perform critical tasks deemed unsuitable, undesirable, understaffed, or unsafe for people, such as full-time homecare, home assistance, telenursing, robot surgery, disaster relief, large-scale manufacturing, nuclear materials handling, and space robotics. I use interdisciplinary techniques across robotics and computer science, including motion planning, motion optimization, shared autonomy, human-robot interaction, and machine learning to formulate and validate generalizable, end-to-end solutions within these problem spaces.
+
+\needspace{5\baselineskip}
+\section*{Appointments}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+{\fontseries{l}\selectfont 2022 - Current} & \textbf{Assistant Professor} \newline
+{\fontseries{m}\selectfont Yale University, Department of Computer Science} \\[0.2em]
+{\fontseries{l}\selectfont 2015-2022} & \textbf{Graduate Researcher} \newline
+{\fontseries{m}\selectfont University of Wisconsin-Madison Visual Computing Lab and Human-Computer Interaction Lab} \\[0.2em]
+{\fontseries{l}\selectfont 2018, 2019} & \textbf{NREIP Researcher} \newline
+{\fontseries{m}\selectfont Naval Research Lab, Washington, D.C.} \\[0.2em]
+\end{longtable}
+
+\needspace{5\baselineskip}
+\section*{Education}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+{\fontseries{l}\selectfont 2015-2022} & \textbf{Ph.D. in Computer Science} \newline
+{\fontseries{m}\selectfont University of Wisconsin-Madison} \newline \textit{Advisors: Michael Gleicher and Bilge Mutlu} \\[0.2em]
+{\fontseries{l}\selectfont 2015-2017} & \textbf{Masters of Computer Science} \newline
+{\fontseries{m}\selectfont University of Wisconsin-Madison}  \\[0.2em]
+{\fontseries{l}\selectfont 2013-2015} & \textbf{Undergraduate work in computer science} \newline
+{\fontseries{m}\selectfont University of Wisconsin-Madison}  \\[0.2em]
+{\fontseries{l}\selectfont 2008-2012} & \textbf{Bachelor of Music in Performance} \newline
+{\fontseries{m}\selectfont Indiana University-Bloomington Jacobs School of Music}  \\[0.2em]
+\end{longtable}
+
+\needspace{5\baselineskip}
+\section*{Selected Honors & Awards}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+{\fontseries{l}\selectfont 2023} & Best Paper Award Winner, \textit{ACM/IEEE Conference on Human-Robot Interaction (HRI)} \\[0.2em]
+{\fontseries{l}\selectfont 2022} & Outstanding Graduate-Student Research Award, \textit{UW-Madison} \\[0.2em]
+{\fontseries{l}\selectfont 2021} & Outstanding Reviewer Award, \textit{Selected by IROS Conference Paper Review Board, Top 4 of 3,942} \\[0.2em]
+{\fontseries{l}\selectfont 2021} & Cisco Graduate Student Fellowship Recipient, \textit{UW-Madison} \\[0.2em]
+{\fontseries{l}\selectfont 2021} & Three Minute Thesis Competition Finalist, \textit{UW-Madison} \\[0.2em]
+{\fontseries{l}\selectfont 2020} & Best Paper Award Finalist, \textit{ACM/IEEE Conference on Human-Robot Interaction (HRI)} \\[0.2em]
+{\fontseries{l}\selectfont 2019} & Microsoft PhD Fellowship Recipient \\[0.2em]
+{\fontseries{l}\selectfont 2018} & Best Paper Award Winner, \textit{ACM/IEEE Conference on Human-Robot Interaction (HRI), Top 4 of 206 papers} \\[0.2em]
+{\fontseries{l}\selectfont 2017} & NSF Graduate Research Fellowship Program Honorable Mention \\[0.2em]
+{\fontseries{l}\selectfont 2017} & HRI Pioneer, \textit{accepted to the selective workshop held at HRI 2017} \\[0.2em]
+\end{longtable}
+
+\needspace{5\baselineskip}
+\section*{Selected Research Grants and Funding}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+{\fontseries{l}\selectfont 2025 - 2026} & \textbf{Advanced AI-Based Manipulation for USV Diesel Engine Maintenance} (Office of Naval Research) \newline
+Role: Key Investigator, Amount: \$160,000 \newline \textit{STTR Phase 1. Key Investigators: Brian Kononchik (Boston Engineering), Daniel Rakita (Yale), Brian Scassellati (Yale), John Steagall (Fairbanks Morse Defense).} \\[0.2em]
+{\fontseries{l}\selectfont 2024 - 2027} & \textbf{Robot Manipulation in Densely Cluttered Environments} (Office of Naval Research) \newline
+Role: Principal Investigator, Amount: \$1,212,027 \newline \textit{Co-PI(s): Brian Scassellati.} \\[0.2em]
+{\fontseries{l}\selectfont 2021-2022} & \textbf{Cisco Graduate Student Fellowship} (Cisco) \newline
+Amount: one year PhD tuition and stipend  \\[0.2em]
+{\fontseries{l}\selectfont 2019-2020} & \textbf{Microsoft PhD Fellowship} (Microsoft) \newline
+Amount: \$84,000 for tuition, stipend, and travel funds  \\[0.2em]
+\end{longtable}
+
+\needspace{12\baselineskip}
+\section*{Selected Publications}
+\needspace{8\baselineskip}
+\subsection*{Journal}
+\begin{longtable}{@{} p{1.5cm} p{\dimexpr\textwidth-2cm\relax} @{}}
+{\fontseries{l}\selectfont 2026} & Bader, J., Sun, X., Rosenfelt, T., Ramirez-Hardy, A., Vitchutripop, T., Pantel, H., Khanna, A., and \textbf{Rakita, D.} Deep learning approach for critical exposure during division of the inferior mesenteric artery in colorectal surgery. \textit{Journal of Robotic Surgery}.\href{https://link.springer.com/article/10.1007/s11701-025-03121-7}{[Link]} \\[0.2em]
+{\fontseries{l}\selectfont 2021} & Chamzas, C., Quintero-Pena, C., Kingston, Z., Orthey, A., \textbf{Rakita, D.}, Gleicher, M., Toussaint, M., and Kavraki, L. MotionBenchMaker: A Tool to Generate and Benchmark Motion Planning Datasets. \textit{IEEE Robotics and Automation Letters}.\href{https://ieeexplore.ieee.org/abstract/document/9645379}{[Link]} \\[0.2em]
+{\fontseries{l}\selectfont } & \textbf{Rakita, D.}, Mutlu, B., and Gleicher, M. Single Query Path Planning using Sample Efficient Probability Informed Trees. \textit{RA-L/ICRA}. \\[0.2em]
+\end{longtable}
+\needspace{8\baselineskip}
+\subsection*{Conference}
+\begin{longtable}{@{} p{1.5cm} p{\dimexpr\textwidth-2cm\relax} @{}}
+{\fontseries{l}\selectfont 2026} & Liang, C., Sun, X., Wang, Q., and \textbf{Rakita, D.} Turning Stale Gradients into Stable Gradients: Coherent Coordinate Descent with Implicit Landscape Smoothing for Lightweight Zeroth-Order Optimization. \textit{ICML}. \\[0.2em]
+{\fontseries{l}\selectfont } & Sun, X., Wang, Y., Yang, S., Chen, Y., and \textbf{Rakita, D.} Hybrid Diffusion Policies with Projective Geometric Algebra for Efficient Robot Manipulation Learning. \textit{ICRA}.\href{https://arxiv.org/abs/2507.05695}{[Link]} \\[0.2em]
+{\fontseries{l}\selectfont } & Wang, Q., Abdellall, O., Gao, T., Sun, X., and \textbf{Rakita, D.} Subsecond 3D Mesh Generation for Robot Manipulation. \textit{ICRA}.\href{https://arxiv.org/abs/2512.24428}{[Link]} \\[0.2em]
+{\fontseries{l}\selectfont 2025} & Liang, C., Wang, P., Xu, A., and \textbf{Rakita, D.} ad-trait: A Fast and Flexible Automatic Differentiation Library in Rust. \textit{IROS}.\href{https://arxiv.org/abs/2504.15976}{[Link]} \\[0.2em]
+{\fontseries{l}\selectfont } & Hoffmeister, L., Scassellati, B., and \textbf{Rakita, D.} Towards Zero-Knowledge Task Planning via a Language-based Approach. \textit{IROS}. \\[0.2em]
+{\fontseries{l}\selectfont } & \textbf{Rakita, D.}, Liang, C., and Wang, Q. Coherence-based Approximate Derivatives via Web of Affine Spaces Optimization. \textit{RSS}.\href{https://arxiv.org/abs/2504.18790}{[Link]} \\[0.2em]
+{\fontseries{l}\selectfont } & Sun, X., Yang, S., Chen, Y., Fan, F., Liang, Y., and \textbf{Rakita, D.} Dynamic Rank Adjustment in Diffusion Policies for Efficient and Flexible Training. \textit{RSS}.\href{https://arxiv.org/abs/2502.03822}{[Link]} \\[0.2em]
+{\fontseries{l}\selectfont 2024} & Hoffmeister, L., Scassellati, B., and \textbf{Rakita, D.} Sequential Discrete Action Selectionvia Blocking Conditions and Resolutions. \textit{IROS}.\href{https://arxiv.org/pdf/2409.08410}{[Link]} \\[0.2em]
+{\fontseries{l}\selectfont 2023} & Schoen, A., Sullivan, D., Zhang, Z., \textbf{Rakita, D.}, and Mutlu, B. Lively: Enabling Multimodal, Lifelike, and Extensible Real-time Robot Motion. \textit{HRI}.\href{https://peopleandrobots.wisc.edu/wp-content/uploads/sites/1469/2023/03/HRI\_2023\_Schoen\_Sullivan\_Lively.pdf}{[Link]}    \newline
+            \textbf{\color{awardcolor}{\color{gold}\faTrophy} Best Paper Award Winner}
+     \\[0.2em]
+{\fontseries{l}\selectfont } & Patel, V., \textbf{Rakita, D.}, and Dollar, A. An Analysis of Unified Manipulation with Robot Arms and Dexterous Hands via Optimization-based Motion Synthesis. \textit{ICRA}.\href{https://www.eng.yale.edu/grablab/pubs/Patel\_ICRA2023.pdf}{[Link]} \\[0.2em]
+{\fontseries{l}\selectfont } & Wang, Y., Praveena, P., \textbf{Rakita, D.}, and Gleicher, M. RangedIK: An Optimization-based Robot Motion Generation Method for Ranged-Goal Tasks. \textit{ICRA}.\href{https://arxiv.org/abs/2302.13935}{[Link]} \\[0.2em]
+{\fontseries{l}\selectfont 2022} & \textbf{Rakita, D.}, Mutlu, B., and Gleicher, M. PROXIMA: An Approach for Time or Accuracy Budgeted Collision Proximity Queries. \textit{RSS}.\href{https://www.roboticsproceedings.org/rss18/p043.pdf}{[Link]} \\[0.2em]
+{\fontseries{l}\selectfont 2021} & \textbf{Rakita, D.}, Shi, H., Mutlu, B., and Gleicher, M. CollisionIK: A Per-Instant Pose Optimization Method for Generating Robot Motions. \textit{ICRA}. \\[0.2em]
+{\fontseries{l}\selectfont } & \textbf{Rakita, D.}, Mutlu, B., and Gleicher, M. Strobe: An Acceleration Meta-algorithm for Optimizing Robot Paths using Concurrent Interleaved Sub-Epoch Pods. \textit{ICRA}. \\[0.2em]
+{\fontseries{l}\selectfont 2020} & Praveena, P., \textbf{Rakita, D.}, Mutlu, B., and Gleicher, M. Supporting Perception of Weight through Motion-induced Sensory Conflicts in Robot Teleoperation. \textit{HRI}.    \newline
+            \textbf{\color{awardcolor}{\color{silver}\faMedal} Best Paper Award Nominee}
+     \\[0.2em]
+{\fontseries{l}\selectfont 2018} & \textbf{Rakita, D.}, Mutlu, B., and Gleicher, M. An Autonomous Dynamic Camera Method for Effective Remote Teleoperation. \textit{HRI}.    \newline
+            \textbf{\color{awardcolor}{\color{gold}\faTrophy} Best Paper Award Winner}
+     \\[0.2em]
+{\fontseries{l}\selectfont 2016} & Bodden, C., \textbf{Rakita, D.}, Mutlu, B., and Gleicher, M. Evaluating Intent-Expressive Robot Arm Motion. \textit{RO-MAN}.    \newline
+            \textbf{\color{awardcolor}{\color{silver}\faMedal} Best Paper Nominee}
+     \\[0.2em]
+\end{longtable}
+
+\needspace{10\baselineskip}
+\section*{Selected Invited Talks}
+\begin{longtable}{@{} p{1.5cm} p{\dimexpr\textwidth-2cm\relax} @{}}
+{\fontseries{l}\selectfont 2025} & \textit{The Applied Planning, Learning, and Optimization Toolbox: A Flexible Rust-Based Software Suite for Robotics Research}. \newline Rust for Robotics Workshop, ICRA \\[0.2em]
+{\fontseries{l}\selectfont 2022} & \textit{Intuitive Robot Shared-Control Interfaces via Real-time Motion Planning and Optimization}. \newline Cornell University \\[0.2em]
+{\fontseries{l}\selectfont 2022} & \textit{Generating Accurate, Feasible, and Coordinated Bimanual Robot Motions in Real-time}. \newline Workshop on Bimanual Manipulation, ICRA \\[0.2em]
+{\fontseries{l}\selectfont 2021} & \textit{Methods and Applications for Generating Accurate and Feasible Robot-arm Motions in Real-time}. \newline KavrakiLab, Rice University \\[0.2em]
+{\fontseries{l}\selectfont 2021} & \textit{Methods and Applications for Generating Accurate and Feasible Robot-arm Motions in Real-time}. \newline Talking-Robotics Series \\[0.2em]
+\end{longtable}
+
+\needspace{10\baselineskip}
+\section*{Selected Teaching}
+\begin{itemize}[leftmargin=0pt, label={}, itemsep=0.5em]
+    \item \textbf{CPSC 487/587 3D Spatial Modeling and Computing}, Yale University \hfill \textit{course I designed}    \newline Several areas of computer science and related fields must model and compute how objects are situated in three-dimensional space over time... This course will teach students how to computationally model the spatial configuration of and spatial relationships between objects over time.                        --- Spring 2024. Course Rating: 4.5/5.0
+                \item \textbf{CPSC 485/585 Applied Planning and Optimization}, Yale University \hfill \textit{course I designed}    \newline This course introduces students to concepts, algorithms, and programming techniques pertaining to planning and optimization...                        --- Spring 2023. Course Rating: 4.5/5.0, Fall 2023. Course Rating: 4.5/5.0
+                \item \textbf{CPSC 685 Topics on Robot Motion Generation}, Yale University \hfill \textit{course I designed}    \newline This course focuses on concepts, approaches, and algorithms related to robot motion generation. Students will read, summarize, present on, and discuss papers and textbook chapters related to search-based path planning, sampling-based path planning, inverse kinematics, and trajectory optimization.                        --- Fall 2022. Course Rating: 4.8/5.0
+                \item \textbf{CPSC 472 Intelligent Robotics}, Yale University \hfill \textit{Guest Lecture}                            --- Fall 2022
+                \item \textbf{CS/ Psych 770 Human-Computer Interaction}, University of Wisconsin-Madison \hfill \textit{Guest Lecture}                            --- Spring 2020
+            \end{itemize}
+
+\needspace{12\baselineskip}
+\section*{Selected Advising}
+\needspace{8\baselineskip}
+\subsection*{Ph.D. Students}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+{\fontseries{l}\selectfont 2023 - current} & Liam Merz Hoffmeister  \\[0.2em]
+{\fontseries{l}\selectfont } & Xiatao Sun  \\[0.2em]
+{\fontseries{l}\selectfont 2024 - current} & Chen Liang  \\[0.2em]
+{\fontseries{l}\selectfont } & TJ Vitchutripop  \\[0.2em]
+{\fontseries{l}\selectfont } & Peter Wang  \\[0.2em]
+{\fontseries{l}\selectfont 2025 - current} & Roshan Klein-Seetharaman  \\[0.2em]
+\end{longtable}
+\needspace{8\baselineskip}
+\subsection*{Masters Students}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+{\fontseries{l}\selectfont 2024 - 2025} & Alan Li  \\[0.2em]
+{\fontseries{l}\selectfont } & Yinliang Chen  \\[0.2em]
+\end{longtable}
+
+\needspace{10\baselineskip}
+\section*{Selected Service}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+{\fontseries{l}\selectfont 2025-Current} & \textbf{Associate Editor}, Transactions on Human-Robot Interaction (THRI) \\[0.2em]
+{\fontseries{l}\selectfont 2024} & \textbf{Program Committee Member}, HRI \\[0.2em]
+{\fontseries{l}\selectfont 2024} & \textbf{Associate Editor}, ICRA \\[0.2em]
+{\fontseries{l}\selectfont 2021} & \textbf{Session Chair}, ICRA session Optimization-Based Motion Planning \\[0.2em]
+{\fontseries{l}\selectfont 2021-Current} & \textbf{Review Editor}, Frontiers in Robotics and AI \\[0.2em]
+\end{longtable}
+
+\needspace{8\baselineskip}
+\section*{Selected Media}
+\begin{itemize}[leftmargin=0pt, label={}, itemsep=0.5em]
+    \item \textbf{Yale News} --- \textit{Grasping the future with a robotic arm-hand combo}
+    \item \textbf{Techcrunch} --- \textit{This robot learns its two-handed moves from human dexterity}
+    \item \textbf{Tech Xplore} --- \textit{Shared control allows a robot to use two hands working together to complete tasks}
+    \item \textbf{Cosmos, The Science of Everything} --- \textit{Breaking: robot makes breakfast}
+    \item \textbf{Milwaukee Journal Sentinel} --- \textit{UW team designs robot hands that work together}
+\end{itemize}
+
+\needspace{8\baselineskip}
+\section*{Technical Skills}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+\textbf{Programming} & Rust, Python, C++, C, C\#, Java, OpenGL, ROS, MATLAB, JavaScript, HTML, CSS, WebGL \\[0.2em]
+\textbf{Software} & Blender, 3dsMax, Unity, MotionBuilder, Photoshop, Illustrator, Premier Pro, After Effects, Maya, MudBox, Office \\[0.2em]
+\end{longtable}
+
+\end{document}

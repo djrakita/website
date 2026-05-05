@@ -87,7 +87,7 @@ def main():
     subprocess.run(["pdflatex", "-interaction=nonstopmode", "-jobname=cv_full", "cv_full.tex"], cwd=CV_GEN_DIR, capture_output=True)
     
     # Move to downloads
-    final_pdf = os.path.join(BASE_DIR, "downloads", "Rakita CV.pdf")
+    final_pdf = os.path.join(BASE_DIR, "downloads", "Rakita_CV.pdf")
     shutil.copy2(os.path.join(CV_GEN_DIR, "cv_full.pdf"), final_pdf)
     print(f"Full CV saved to {final_pdf}")
 

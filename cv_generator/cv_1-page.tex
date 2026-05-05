@@ -1,0 +1,108 @@
+\documentclass[10pt, letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{AlegreyaSans}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{datetime}
+\usepackage{needspace}
+\usepackage{graphicx}
+
+\definecolor{primary}{RGB}{0, 53, 107} % Yale Blue
+\definecolor{darkgray}{RGB}{60, 60, 60}
+\definecolor{lightgray}{RGB}{120, 120, 120}
+\definecolor{gold}{RGB}{184, 134, 11} % Darker gold for better contrast
+\definecolor{silver}{RGB}{105, 105, 105} % Darker silver
+\definecolor{awardcolor}{RGB}{0, 53, 107} % Match Yale Blue for consistency
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    filecolor=primary,      
+    urlcolor=primary,
+    pdftitle={Daniel Rakita - Curriculum Vitae},
+}
+
+% Customize section formatting
+\titleformat{\section}{\Large\sffamily\bfseries\color{primary}}{}{0em}{}[\titlerule\vspace{1ex}\nobreak]
+\titlespacing{\section}{0pt}{1.5ex}{0.5ex}
+
+\titleformat{\subsection}{\large\sffamily\bfseries\color{darkgray}}{}{0em}{\MakeUppercase\nobreak}
+\titlespacing{\subsection}{0pt}{1ex}{0.5ex}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% Header
+{\LARGE\sffamily\bfseries\color{primary} Daniel Rakita} \hfill {\large\fontseries{l}\selectfont Curriculum Vitae --- \monthname\ \the\year} \\[0.5em]
+{\large\fontseries{m}\selectfont \smash{\includegraphics[height=1.2em]{/Users/dannyrakita/Documents/website/imgs/Yale_Bulldogs_logo.svg.png}}\hspace{0.5em}Yale University, Department of Computer Science} \\
+{\fontseries{l}\selectfont 123 Main St, New Haven, CT 06520 USA} \\[0.5em]
+\textbf{\color{primary}\faEnvelope} \href{mailto:daniel.rakita@yale.edu}{daniel.rakita@yale.edu} \\
+\textbf{\color{primary}\faGlobe} \href{https://dannyrakita.com}{https://dannyrakita.com} \\
+\textbf{\color{primary}\faFlask} \href{https://apollo-lab-yale.github.io/}{https://apollo-lab-yale.github.io/} \\
+\textbf{\color{primary}\faGraduationCap} \href{https://scholar.google.com/citations?user=1Y-cnCUAAAAJ&hl=en}{Google Scholar}
+
+\vspace{1.5em}
+
+
+\needspace{5\baselineskip}
+\section*{Appointments}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+{\fontseries{l}\selectfont 2022 - Current} & \textbf{Assistant Professor} \newline
+{\fontseries{m}\selectfont Yale University, Department of Computer Science} \\[0.2em]
+{\fontseries{l}\selectfont 2015-2022} & \textbf{Graduate Researcher} \newline
+{\fontseries{m}\selectfont University of Wisconsin-Madison Visual Computing Lab and Human-Computer Interaction Lab} \\[0.2em]
+{\fontseries{l}\selectfont 2018, 2019} & \textbf{NREIP Researcher} \newline
+{\fontseries{m}\selectfont Naval Research Lab, Washington, D.C.} \\[0.2em]
+\end{longtable}
+
+\needspace{5\baselineskip}
+\section*{Education}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+{\fontseries{l}\selectfont 2015-2022} & \textbf{Ph.D. in Computer Science} \newline
+{\fontseries{m}\selectfont University of Wisconsin-Madison} \newline \textit{Advisors: Michael Gleicher and Bilge Mutlu} \\[0.2em]
+{\fontseries{l}\selectfont 2015-2017} & \textbf{Masters of Computer Science} \newline
+{\fontseries{m}\selectfont University of Wisconsin-Madison}  \\[0.2em]
+{\fontseries{l}\selectfont 2013-2015} & \textbf{Undergraduate work in computer science} \newline
+{\fontseries{m}\selectfont University of Wisconsin-Madison}  \\[0.2em]
+{\fontseries{l}\selectfont 2008-2012} & \textbf{Bachelor of Music in Performance} \newline
+{\fontseries{m}\selectfont Indiana University-Bloomington Jacobs School of Music}  \\[0.2em]
+\end{longtable}
+
+
+
+
+
+
+\needspace{12\baselineskip}
+\section*{Selected Advising}
+\needspace{8\baselineskip}
+\subsection*{Ph.D. Students}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+{\fontseries{l}\selectfont 2023 - current} & Liam Merz Hoffmeister  \\[0.2em]
+{\fontseries{l}\selectfont } & Xiatao Sun  \\[0.2em]
+{\fontseries{l}\selectfont 2024 - current} & Chen Liang  \\[0.2em]
+{\fontseries{l}\selectfont } & TJ Vitchutripop  \\[0.2em]
+{\fontseries{l}\selectfont } & Peter Wang  \\[0.2em]
+{\fontseries{l}\selectfont 2025 - current} & Roshan Klein-Seetharaman  \\[0.2em]
+\end{longtable}
+\needspace{8\baselineskip}
+\subsection*{Masters Students}
+\begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
+{\fontseries{l}\selectfont 2024 - 2025} & Alan Li  \\[0.2em]
+{\fontseries{l}\selectfont } & Yinliang Chen  \\[0.2em]
+\end{longtable}
+
+
+
+
+\end{document}
