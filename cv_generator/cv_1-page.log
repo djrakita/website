@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.19)  5 MAY 2026 12:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.19)  7 MAY 2026 10:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -580,10 +580,10 @@ Package rerunfilecheck Info: File `cv_1-page.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14905 strings out of 474116
- 259222 string characters out of 5743682
- 1943187 words of memory out of 5000000
- 37068 multiletter control sequences out of 15000+600000
+ 14903 strings out of 474116
+ 259210 string characters out of 5743682
+ 1942187 words of memory out of 5000000
+ 37067 multiletter control sequences out of 15000+600000
  733407 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,5n,80p,1013b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -593,10 +593,10 @@ yaSans-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegre
 ya/AlegreyaSans-Light.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huert
 a/alegreya/AlegreyaSans-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
 ype1/public/fontawesome5/FontAwesome5Free-Solid.pfb>
-Output written on cv_1-page.pdf (1 page, 295444 bytes).
+Output written on cv_1-page.pdf (1 page, 295274 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
+ 50 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

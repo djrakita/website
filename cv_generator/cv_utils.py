@@ -50,3 +50,13 @@ def escape_dict(d):
     else: return escape_latex(d)
 
 RESEARCH_MISSION = "My research primarily involves formulating planning, optimization, and learning algorithms that allow robot manipulation platforms to effectively complete tasks. The goal of my work is to enable people to intuitively control or work alongside robot manipulation platforms to perform critical tasks deemed unsuitable, undesirable, understaffed, or unsafe for people, such as full-time homecare, home assistance, telenursing, robot surgery, disaster relief, large-scale manufacturing, nuclear materials handling, and space robotics. I use interdisciplinary techniques across robotics and computer science, including motion planning, motion optimization, shared autonomy, human-robot interaction, and machine learning to formulate and validate generalizable, end-to-end solutions within these problem spaces."
+
+CONTACT_INFO = {
+    'name': "Daniel Rakita",
+    'organization': "Yale University, Department of Computer Science",
+    'address': "123 Main St, New Haven, CT 06520 USA",
+    'email': "daniel.rakita@yale.edu",
+    'website': "https://dannyrakita.net",
+    'lab_website': "https://apollo-lab-yale.github.io/",
+    'google_scholar': "https://scholar.google.com/citations?user=1Y-cnCUAAAAJ&hl=en"
+}

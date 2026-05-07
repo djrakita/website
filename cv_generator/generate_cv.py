@@ -3,7 +3,7 @@ import os
 import subprocess
 import shutil
 import re
-from cv_utils import normalize_author_string, format_date_string, load_yaml, escape_dict, RESEARCH_MISSION
+from cv_utils import normalize_author_string, format_date_string, load_yaml, escape_dict, RESEARCH_MISSION, CONTACT_INFO
 
 BASE_DIR = "/Users/dannyrakita/Documents/website/"
 CV_GEN_DIR = os.path.join(BASE_DIR, "cv_generator")
@@ -12,14 +12,8 @@ def main():
     print("\n--- Generating Full CV Version ---")
     
     # Core Data
-    data = {
-        'name': "Daniel Rakita",
-        'organization': "Yale University, Department of Computer Science",
-        'address': "123 Main St, New Haven, CT 06520 USA",
-        'email': "daniel.rakita@yale.edu",
-        'website': "https://dannyrakita.com",
-        'lab_website': "https://apollo-lab-yale.github.io/",
-        'google_scholar': "https://scholar.google.com/citations?user=1Y-cnCUAAAAJ&hl=en",
+    data = CONTACT_INFO.copy()
+    data.update({
         'research_interests': RESEARCH_MISSION,
         'condensed': False,
         'titles': {
@@ -30,9 +24,8 @@ def main():
             'teaching': "Teaching & Curriculum Development",
             'advising': "Advising & Student Mentoring",
             'service': r"Service \& Leadership",
-            'media': "Selected Media Coverage"
         }
-    }
+    })
 
     # Load and process data
     data['experience'] = escape_dict([dict(exp, dates=format_date_string(exp['dates'])) for exp in load_yaml("experience.yml", BASE_DIR)])

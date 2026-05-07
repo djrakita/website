@@ -1,0 +1,61 @@
+# This file is automatically updated by the AI based on cv_preferences.md.
+# You can also edit it manually if you prefer structured control.
+
+versions:
+  "1-Page":
+    target_pages: 1
+    condensed: true
+    show_mission: false
+    show_skills: false
+    sections_enabled:
+      - experience
+      - education
+      - awards
+      - funding
+      - publications
+      - teaching
+      - advising
+    max_entries:
+      awards: 1
+      funding: 1
+      publications: 1
+      teaching: 1
+      service: 0
+      talks: 0
+      media: 0
+    advising_categories:
+      - "Ph.D. Students"
+    # Specific titles of items to ALWAYS include regardless of saliency
+    force_include:
+      publications: []
+      awards: []
+
+  "4-Page":
+    target_pages: 4
+    condensed: true
+    show_mission: true
+    show_skills: true
+    sections_enabled:
+      - experience
+      - education
+      - awards
+      - funding
+      - publications
+      - teaching
+      - advising
+      - service
+      - talks
+      - media
+    max_entries:
+      awards: 10
+      funding: 5
+      publications: 20
+      teaching: 5
+      service: 5
+      talks: 5
+      media: 5
+    advising_categories:
+      - "Ph.D. Students"
+      - "Masters Students"
+    force_include:
+      publications: []
