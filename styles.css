@@ -225,7 +225,7 @@ section {
     padding: 1rem 0;
     border-bottom: 1px solid #eee;
     overflow: hidden;
-    max-height: 120px; /* Safe upper limit for news item height */
+    max-height: 160px; /* Safe upper limit for news item height when collapsed */
     opacity: 1;
     transform: translateY(0);
     transition: opacity 0.25s cubic-bezier(0.25, 1, 0.5, 1),
@@ -303,6 +303,10 @@ section {
     line-height: 1.7;
     opacity: 0;
     transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.news_item.is_open {
+    max-height: 1000px; /* Allow full height when expanded */
 }
 
 .news_item.is_open .news_content_wrapper {
