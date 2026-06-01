@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             items.forEach((item, index) => {
                                 if (index >= limit) {
                                     if (isExpanded) {
-                                        const delay = (index - limit) * 50; // slightly faster stagger for long lists
+                                        const delay = (index - limit) * 20; // 20ms stagger for a super fast cascade
                                         item.style.transitionDelay = `${delay}ms`;
                                         item.classList.remove('hidden');
                                     } else {
@@ -295,9 +295,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             if (index >= limit) {
                                 if (isExpanded) {
                                     // Stagger delay for each additional item
-                                    const delay = (index - limit) * 100; // 100ms stagger
-                                    item.style.transitionDelay = `${delay}ms`;
-                                    item.classList.remove('hidden');
+                                        const delay = (index - limit) * 30; // 30ms stagger for a very fast cascade
+                                        item.style.transitionDelay = `${delay}ms`;
+                                        item.classList.remove('hidden');
                                 } else {
                                     // No delay when collapsing for a snappier feel
                                     item.style.transitionDelay = '0ms';
