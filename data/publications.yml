@@ -141,6 +141,7 @@
   threads:
   - Spatial Computing for Embodied Intelligence
   - Combining Visual + Manipulation Learning
+  presentation: Oral
 - title: Subsecond 3D Mesh Generation for Robot Manipulation
   authors: Qian Wang, Omar Abdellall, Tony Gao, Xiatao Sun, Daniel Rakita
   type: Conference

@@ -54,7 +54,7 @@ RESEARCH_MISSION = "My research primarily involves formulating planning, optimiz
 CONTACT_INFO = {
     'name': "Daniel Rakita",
     'organization': "Yale University, Department of Computer Science",
-    'address': "123 Main St, New Haven, CT 06520 USA",
+    'address': "51 Prospect St, New Haven, CT 06511",
     'email': "daniel.rakita@yale.edu",
     'website': "https://dannyrakita.net",
     'lab_website': "https://apollo-lab-yale.github.io/",

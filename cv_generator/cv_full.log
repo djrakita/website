@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.19)  7 MAY 2026 10:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.19)  1 JUN 2026 14:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -584,29 +584,28 @@ ble
 ut line 117.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/bold/n' will be
 (Font)              scaled to size 12.0pt on input line 117.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
+nput line 132.
 
-Underfull \hbox (badness 2538) in paragraph at lines 134--134
+(/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
+)
+Underfull \hbox (badness 2538) in paragraph at lines 136--136
 []|\T1/AlegreyaSans-LF/regular/n/10.95 Hoffmeister, L., Scas-sel-lati, B., and 
 \T1/AlegreyaSans-LF/bold/n/10.95 Rakita, D. \T1/AlegreyaSans-LF/regular/n/10.95
  To-wards Zero-Knowledge Task Plan-ning via a
  []
 
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on i
-nput line 141.
+nput line 143.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree3.fd
-)
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 148.
-
-(/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
-) [3] [4{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5fre
-e3.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free
-2.enc}]
+) [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.e
+nc}] [4{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free
+3.enc}]
 ! Misplaced alignment tab character &.
 <argument> Teaching &
                       Curriculum Development
-l.182 \section*{Teaching & Curriculum Development}
+l.184 \section*{Teaching & Curriculum Development}
                                                   
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -619,7 +618,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced alignment tab character &.
 <argument> Advising &
                       Student Mentoring
-l.212 \section*{Advising & Student Mentoring}
+l.214 \section*{Advising & Student Mentoring}
                                              
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -639,7 +638,7 @@ Package rerunfilecheck Info: File `cv_full.out' has not changed.
 Here is how much of TeX's memory you used:
  14976 strings out of 474116
  260742 string characters out of 5743682
- 1953187 words of memory out of 5000000
+ 1954187 words of memory out of 5000000
  37114 multiletter control sequences out of 15000+600000
  734309 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -650,7 +649,7 @@ yaSans-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegre
 ya/AlegreyaSans-Light.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huert
 a/alegreya/AlegreyaSans-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
 ype1/public/fontawesome5/FontAwesome5Free-Solid.pfb>
-Output written on cv_full.pdf (8 pages, 328721 bytes).
+Output written on cv_full.pdf (8 pages, 351696 bytes).
 PDF statistics:
  113 PDF objects out of 1000 (max. 8388607)
  88 compressed objects within 1 object stream

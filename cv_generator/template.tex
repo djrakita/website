@@ -20,7 +20,7 @@
 \definecolor{lightgray}{RGB}{120, 120, 120}
 \definecolor{gold}{RGB}{184, 134, 11} % Darker gold for better contrast
 \definecolor{silver}{RGB}{105, 105, 105} % Darker silver
-\definecolor{awardcolor}{RGB}{0, 53, 107} % Match Yale Blue for consistency
+\definecolor{awardcolor}{RGB}{180, 50, 50} % Red matching the website awards
 
 \hypersetup{
     colorlinks=true,
@@ -43,7 +43,7 @@
 \begin{document}
 
 % Header
-{\LARGE\sffamily\bfseries\color{primary} << name >>} \hfill {\large\fontseries{l}\selectfont Curriculum Vitae --- \monthname\ \the\year} \\[0.5em]
+{\LARGE\sffamily\bfseries\color{primary} << name >>} \hfill {\large\fontseries{l}\selectfont <% if header_right %><< header_right >><% else %>Curriculum Vitae --- \monthname\ \the\year<% endif %>} \\[0.5em]
 {\large\fontseries{m}\selectfont \smash{\includegraphics[height=1.2em]{/Users/dannyrakita/Documents/website/imgs/Yale_Bulldogs_logo.svg.png}}\hspace{0.5em}<< organization >>} \\
 {\fontseries{l}\selectfont << address >>} \\[0.5em]
 \textbf{\color{primary}\faEnvelope} \href{mailto:<< email >>}{<< email >>} \\
@@ -61,7 +61,7 @@
 
 <% if experience %>
 \needspace{5\baselineskip}
-\section*{Appointments}
+\section*{<< titles.experience | default('Appointments') >>}
 \begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
 <% for exp in experience %>
 {\fontseries{l}\selectfont << exp.dates >>} & \textbf{<< exp.title >>} \newline
@@ -72,7 +72,7 @@
 
 <% if education %>
 \needspace{5\baselineskip}
-\section*{Education}
+\section*{<< titles.education | default('Education') >>}
 \begin{longtable}{@{} p{2.5cm} p{\dimexpr\textwidth-3cm\relax} @{}}
 <% for edu in education %>
 {\fontseries{l}\selectfont << edu.year >>} & \textbf{<< edu.degree >>} \newline
@@ -119,6 +119,10 @@
     <% else %>
         \textbf{\color{awardcolor}{\color{silver}\faMedal} << pub.award >>}
     <% endif %>
+<% endif %>
+<% if pub.presentation == 'Oral' %>
+    \newline
+    \textbf{\color{awardcolor}{\color{silver}\faMicrophone} Oral Presentation}
 <% endif %> \\[<% if condensed %>0.2em<% else %>0.5em<% endif %>]
 <% endfor %>
 \end{longtable}

@@ -158,15 +158,20 @@ document.addEventListener('DOMContentLoaded', () => {
                         let awardSuffix = '';
                         if (item.award) {
                             if (item.award.toLowerCase().includes('winner') || item.award.toLowerCase().includes('1st')) {
-                                awardSuffix = ` <span class="award_icon trophy"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.2 4H18V2H6v2H3.8C2.8 4 2 4.8 2 5.8v2.4c0 3.1 2.3 5.7 5.3 6 1.1 2.6 3.7 4.4 6.7 4.4s5.6-1.8 6.7-4.4c3-.3 5.3-2.9 5.3-6V5.8C26 4.8 25.2 4 24.2 4zM6 12.2c-2-.3-3.6-2.1-3.6-4.2V6h3.6v6.2zM21.6 8c0 2.1-1.6 3.9-3.6 4.2V6h3.6v2zM12 20c-1.8 0-3.3-1-4.2-2.5h8.4c-.9 1.5-2.4 2.5-4.2 2.5zM8 22h8v2H8z" transform="scale(0.85) translate(2,2)"/></svg></span><strong style="color: #B43232;">${item.award}</strong>`;
+                                awardSuffix = ` <span class="award_icon trophy"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 5h-2V3H7v2H5C3.9 5 3 5.9 3 7v1c0 2.55 1.92 4.67 4.39 4.97C8.44 14.8 10.98 16.4 11 18.06V20H8v2h8v-2h-3v-1.94c.02-1.66 2.56-3.26 3.61-6.09C19.08 12.67 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg></span><strong style="color: #B43232;">${item.award}</strong>`;
                             } else {
                                 awardSuffix = ` <span class="award_icon medal"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 15.2l-3.5 2.1.9-4-3.1-2.7 4.1-.3L12 6.6l1.6 3.7 4.1.3-3.1 2.7.9 4-3.5-2.1zM2 2h4l4.5 9-1.5 3L2 2zm16 0h4l-7 12-1.5-3L18 2z"/></svg></span><strong style="color: #B43232;">${item.award}</strong>`;
                             }
                         }
 
+                        let presentationSuffix = '';
+                        if (item.presentation === 'Oral') {
+                            presentationSuffix = ` <span class="award_icon microphone"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg></span><strong style="color: #B43232;">Oral Presentation</strong>`;
+                        }
+
                         pubDiv.innerHTML = `
                             ${pdfLink}
-                            <span>${idStr}${item.authors} (${item.year}). <strong>${item.title}</strong> <em>${item.venue ? item.venue : ''}</em>.${awardSuffix}</span>
+                            <span>${idStr}${item.authors} (${item.year}). <strong>${item.title}</strong> <em>${item.venue ? item.venue : ''}</em>.${awardSuffix}${presentationSuffix}</span>
                         `;
                         listDiv.appendChild(pubDiv);
                     });
@@ -214,6 +219,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleNewsBtn = document.getElementById('toggle_news');
 
     if (newsContainer && toggleNewsBtn) {
+        // Event delegation for news items expand/collapse
+        newsContainer.addEventListener('click', (e) => {
+            const summary = e.target.closest('.news_summary');
+            if (!summary) return;
+            
+            const newsItem = summary.closest('.news_item');
+            if (!newsItem) return;
+            
+            const isOpen = newsItem.classList.toggle('is_open');
+            summary.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+        
+        newsContainer.addEventListener('keydown', (e) => {
+            if (e.key === ' ' || e.key === 'Enter') {
+                const summary = e.target.closest('.news_summary');
+                if (summary) {
+                    e.preventDefault();
+                    summary.click();
+                }
+            }
+        });
+
         fetch('data/news.yml')
             .then(response => response.text())
             .then(text => jsyaml.load(text))
@@ -222,15 +249,37 @@ document.addEventListener('DOMContentLoaded', () => {
                 const limit = 3;
 
                 data.forEach((item, index) => {
+                    const hasContent = item.content && item.content.trim() !== '';
                     const newsItem = document.createElement('div');
                     newsItem.className = 'news_item';
                     if (index >= limit) {
                         newsItem.classList.add('hidden');
                     }
 
-                    newsItem.innerHTML = `
-                        <span class="news_date">[${item.date}]</span> ${item.content}
-                    `;
+                    if (hasContent) {
+                        newsItem.classList.add('news_expandable');
+                        newsItem.innerHTML = `
+                            <div class="news_summary" role="button" aria-expanded="false" tabindex="0">
+                                <span class="news_summary_left">
+                                    <span class="news_date">[${item.date}]</span> 
+                                    <span class="news_title_text">${item.title || 'News Update'}</span>
+                                </span>
+                                <span class="expand_icon">▼</span>
+                            </div>
+                            <div class="news_content_wrapper">
+                                <div class="news_content">
+                                    ${item.content}
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        newsItem.innerHTML = `
+                            <div class="news_simple">
+                                <span class="news_date">[${item.date}]</span> 
+                                <span class="news_title_text">${item.title || 'News Update'}</span>
+                            </div>
+                        `;
+                    }
                     newsContainer.appendChild(newsItem);
                 });
 

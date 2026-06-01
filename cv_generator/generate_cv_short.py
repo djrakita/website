@@ -60,7 +60,7 @@ def generate_short_version(version_name, output_filename, config):
             p['authors'] = authors
             # Logic: check if explicitly tagged in data, or in force_include list, or has award
             is_forced = p.get('title') in force_pubs or p.get('version') == version_name or (isinstance(p.get('version'), list) and version_name in p['version'])
-            p['salience'] = 1000 if is_forced else (100 if p.get('award') else 0)
+            p['salience'] = 1000 if is_forced else (100 if (p.get('award') or p.get('presentation') == 'Oral') else 0)
             filtered_pubs.append(p)
         
         # Sort by salience then year
