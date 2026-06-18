@@ -1,4 +1,4 @@
-- course: CPSC 487/587 3D Spatial Modeling and Computing
+- course: CPSC 4870/5870 3D Spatial Modeling and Computing
   university: Yale University
   role: course I designed
   description: Several areas of computer science and related fields must model and
@@ -7,7 +7,8 @@
     of and spatial relationships between objects over time.
   offerings:
   - 'Spring 2024. Course Rating: 4.5/5.0'
-- course: CPSC 485/585 Applied Planning and Optimization
+  - 'Spring 2026. Course Rating: 4.6/5.0'
+- course: CPSC 4850/5850 Applied Planning and Optimization
   university: Yale University
   role: course I designed
   description: This course introduces students to concepts, algorithms, and programming
@@ -15,6 +16,7 @@
   offerings:
   - 'Spring 2023. Course Rating: 4.5/5.0'
   - 'Fall 2023. Course Rating: 4.5/5.0'
+  - 'Fall 2025. Course Rating: 4.4/5.0'
 - course: CPSC 685 Topics on Robot Motion Generation
   university: Yale University
   role: course I designed

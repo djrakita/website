@@ -42,15 +42,6 @@
   threads:
   - Spatial Computing for Embodied Intelligence
   - Combining Visual + Manipulation Learning
-- title: Robust and Efficient MuJoCo-based Model Predictive Control via Web of Affine
-    Spaces Derivatives
-  authors: Chen Liang, Daniel Rakita
-  type: Preprint
-  year: 2026
-  link: https://arxiv.org/abs/2512.21109
-  threads:
-  - Computational Differentiation and Vector Recovery
-  - Motion Generation Algorithms
 - title: 'Mesh RAG: Retrieval Augmentation for Autoregressive Mesh Generation'
   authors: Xiatao Sun, Chen Liang, Qian Wang, Daniel Rakita
   type: Preprint
@@ -150,6 +141,16 @@
   link: https://arxiv.org/abs/2512.24428
   threads:
   - Automatic Mesh Generation for Robotics
+- title: Robust and Efficient MuJoCo-based Model Predictive Control via Web of Affine
+    Spaces Derivatives
+  authors: Chen Liang, Daniel Rakita
+  type: Conference
+  venue: IROS
+  year: 2026
+  link: https://arxiv.org/abs/2512.21109
+  threads:
+  - Computational Differentiation and Vector Recovery
+  - Motion Generation Algorithms
 - title: 'ad-trait: A Fast and Flexible Automatic Differentiation Library in Rust'
   authors: Chen Liang, Peter Wang, Andy Xu, Daniel Rakita
   type: Conference

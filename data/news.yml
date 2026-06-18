@@ -1,3 +1,9 @@
+- date: '2026-06-18'
+  type: Publication
+  title: Paper accepted to IROS 2026!
+  content: |
+    Our paper, <a href="https://arxiv.org/abs/2512.21109"><em>Robust and Efficient MuJoCo-based Model Predictive Control via Web of Affine Spaces Derivatives</em></a> (authors: Chen Liang, Daniel Rakita) has been accepted to IROS 2026!
+
 - date: '2026-06-01'
   type: Announcement
   title: APOLLO Lab at ICRA 2026 - Oral Presentation

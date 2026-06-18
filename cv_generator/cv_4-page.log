@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.19)  1 JUN 2026 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.19)  18 JUN 2026 11:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -590,11 +590,11 @@ nput line 118.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
 )
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on i
-nput line 128.
+nput line 129.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree3.fd
 )
-Underfull \hbox (badness 1264) in paragraph at lines 130--130
+Underfull \hbox (badness 1264) in paragraph at lines 131--131
 []|\T1/AlegreyaSans-LF/regular/n/10 Patel, V., \T1/AlegreyaSans-LF/bold/n/10 Ra
 kita, D.\T1/AlegreyaSans-LF/regular/n/10 , and Dol-lar, A. An Anal-y-sis of Uni
 -fied Ma-nip-u-la-tion with Robot Arms and Dex-ter-ous Hands via
@@ -613,7 +613,7 @@ Package rerunfilecheck Info: File `cv_4-page.out' has not changed.
 Here is how much of TeX's memory you used:
  14966 strings out of 474116
  260601 string characters out of 5743682
- 1950187 words of memory out of 5000000
+ 1949187 words of memory out of 5000000
  37109 multiletter control sequences out of 15000+600000
  734003 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -624,10 +624,10 @@ yaSans-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegre
 ya/AlegreyaSans-Light.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huert
 a/alegreya/AlegreyaSans-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
 ype1/public/fontawesome5/FontAwesome5Free-Solid.pfb>
-Output written on cv_4-page.pdf (4 pages, 343271 bytes).
+Output written on cv_4-page.pdf (4 pages, 343393 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 94 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  16 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
