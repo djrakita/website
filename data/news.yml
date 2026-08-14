@@ -1,3 +1,9 @@
+- date: '2026-08-01'
+  type: Publication
+  title: Paper accepted to the Journal of Robotic Surgery
+  content: |
+    Our paper, <em>AI-Powered Semantic Segmentation Model for Enhanced Ureteral Mapping and Real-Time Instrument Feedback in Robotic Colorectal Surgery</em> (authors: Justin M. Bader, Xiatao Sun, Tripp Rosenfelt, Alexis Ramirez-Hardy, Netanel Sapir, Rachel Scheub, Teeratham Vitchutripop, Amit Khanna, Haddon Pantel, Daniel Rakita) has been accepted to the Journal of Robotic Surgery!
+
 - date: '2026-06-18'
   type: Publication
   title: Paper accepted to IROS 2026!

@@ -62,6 +62,16 @@
 # Journal Articles
 # ==========================================
 
+- title: AI-Powered Semantic Segmentation Model for Enhanced Ureteral Mapping and Real-Time
+    Instrument Feedback in Robotic Colorectal Surgery
+  authors: Justin M. Bader, Xiatao Sun, Tripp Rosenfelt, Alexis Ramirez-Hardy, Netanel
+    Sapir, Rachel Scheub, Teeratham Vitchutripop, Amit Khanna, Haddon Pantel, Daniel
+    Rakita
+  type: Journal
+  venue: Journal of Robotic Surgery
+  year: 2026
+  threads:
+  - AI for Robotic Surgery
 - title: Deep learning approach for critical exposure during division of the inferior
     mesenteric artery in colorectal surgery
   authors: Jay Bader, Xiatao Sun, Tripp Rosenfelt, Alexis Ramirez-Hardy, Teeratham
