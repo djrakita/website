@@ -341,7 +341,7 @@ section {
     align-items: flex-start;
     gap: 1rem;
     overflow: hidden;
-    max-height: 180px; /* Safe upper limit for publication height */
+    max-height: 480px; /* Allow long titles and author lists, including on mobile */
     opacity: 1;
     transform: translateY(0);
     transition: opacity 0.25s cubic-bezier(0.25, 1, 0.5, 1),

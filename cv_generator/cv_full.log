@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.19)  14 AUG 2026 15:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.19)  4 SEP 2026 23:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -564,20 +564,7 @@ LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/it' will be
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2024/texmf-dist/fonts/enc/dvips/alegreya/algr_jfvu45.enc}{/usr/local
 /texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc} </Users/dan
-nyrakita/Documents/website/imgs/Yale_Bulldogs_logo.svg.png>]
-! Misplaced alignment tab character &.
-<argument> Honors &
-                    Awards
-l.85 \section*{Honors & Awards}
-                               
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-[2]
+nyrakita/Documents/website/imgs/Yale_Bulldogs_logo.svg.png>] [2]
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/b/n' in size <12> not availa
 ble
 (Font)              Font shape `T1/AlegreyaSans-LF/bold/n' tried instead on inp
@@ -585,48 +572,23 @@ ut line 117.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/bold/n' will be
 (Font)              scaled to size 12.0pt on input line 117.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 133.
+nput line 135.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
 )
-Underfull \hbox (badness 2538) in paragraph at lines 138--138
+Underfull \hbox (badness 2538) in paragraph at lines 140--140
 []|\T1/AlegreyaSans-LF/regular/n/10.95 Hoffmeister, L., Scas-sel-lati, B., and 
 \T1/AlegreyaSans-LF/bold/n/10.95 Rakita, D. \T1/AlegreyaSans-LF/regular/n/10.95
  To-wards Zero-Knowledge Task Plan-ning via a
  []
 
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on i
-nput line 145.
+nput line 147.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree3.fd
 ) [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.e
 nc}] [4{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free
-3.enc}] [5]
-! Misplaced alignment tab character &.
-<argument> Teaching &
-                      Curriculum Development
-l.186 \section*{Teaching & Curriculum Development}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> Advising &
-                      Student Mentoring
-l.218 \section*{Advising & Student Mentoring}
-                                             
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-[6] [7] [8] (./cv_full.aux)
+3.enc}] [5] [6] [7] [8] (./cv_full.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -637,7 +599,7 @@ Package rerunfilecheck Info: File `cv_full.out' has not changed.
 Here is how much of TeX's memory you used:
  14976 strings out of 474116
  260742 string characters out of 5743682
- 1955187 words of memory out of 5000000
+ 1957187 words of memory out of 5000000
  37114 multiletter control sequences out of 15000+600000
  734309 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -648,7 +610,7 @@ yaSans-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegre
 ya/AlegreyaSans-Light.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huert
 a/alegreya/AlegreyaSans-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
 ype1/public/fontawesome5/FontAwesome5Free-Solid.pfb>
-Output written on cv_full.pdf (8 pages, 351881 bytes).
+Output written on cv_full.pdf (8 pages, 352513 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  89 compressed objects within 1 object stream

@@ -17,12 +17,12 @@ def main():
         'research_interests': RESEARCH_MISSION,
         'condensed': False,
         'titles': {
-            'awards': "Honors & Awards",
+            'awards': r"Honors \& Awards",
             'funding': "Research Grants and Funding",
             'publications': "Publications",
             'invited_talks': "Selected Invited Talks",
-            'teaching': "Teaching & Curriculum Development",
-            'advising': "Advising & Student Mentoring",
+            'teaching': r"Teaching \& Curriculum Development",
+            'advising': r"Advising \& Student Mentoring",
             'service': r"Service \& Leadership",
         }
     })

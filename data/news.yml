@@ -1,3 +1,13 @@
+- date: '2026-09-04'
+  type: Publication
+  title: Two papers accepted to CoRL 2026!
+  content: |
+    Two of our papers have been accepted to CoRL 2026!
+    <br><br>
+    <em>Artificial Foveated Perception for Mitigating Shortcut Learning in Robotic Foundation Models</em> (authors: Xiatao Sun, Yuan Zhuang, Mateo Sanchez Lopez Negrete, Matei-Victor Coldea, Chen Liang, Haoyang Zhang, Che Liu, Ziyao Zeng, Shawn Li, Qian Wang, Fei Miao, Daniel Rakita).
+    <br><br>
+    <em>Efficient On-policy Visual-RL via Stochastic Decoupled Policy Gradient</em> (authors: Haoxiang You, Yilang Liu, Davis Zong, Qian Wang, Teeratham Vitchutripop, Qi Wang, Daniel Rakita, Ian Abraham).
+
 - date: '2026-08-01'
   type: Publication
   title: Paper accepted to the Journal of Robotic Surgery

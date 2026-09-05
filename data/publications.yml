@@ -123,6 +123,16 @@
 # Conference Papers
 # ==========================================
 
+- title: Artificial Foveated Perception for Mitigating Shortcut Learning in Robotic Foundation Models
+  authors: Xiatao Sun, Yuan Zhuang, Mateo Sanchez Lopez Negrete, Matei-Victor Coldea, Chen Liang, Haoyang Zhang, Che Liu, Ziyao Zeng, Shawn Li, Qian Wang, Fei Miao, Daniel Rakita
+  type: Conference
+  venue: CoRL
+  year: 2026
+- title: Efficient On-policy Visual-RL via Stochastic Decoupled Policy Gradient
+  authors: Haoxiang You, Yilang Liu, Davis Zong, Qian Wang, Teeratham Vitchutripop, Qi Wang, Daniel Rakita, Ian Abraham
+  type: Conference
+  venue: CoRL
+  year: 2026
 - title: 'Turning Stale Gradients into Stable Gradients: Coherent Coordinate Descent
     with Implicit Landscape Smoothing for Lightweight Zeroth-Order Optimization'
   authors: Chen Liang, Xiatao Sun, Qian Wang, Daniel Rakita
