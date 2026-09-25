@@ -123,6 +123,11 @@
 # Conference Papers
 # ==========================================
 
+- title: 'RuleSmith: Multi-Agent LLMs for Automated Game Balancing'
+  authors: Ziyao Zeng, Hao Wang, Chen Liu, Youheng Yao, Jingcheng Ni, Tianyu Liu, Xiatao Sun, Fengyu Yang, Chenyu You, Xiaofeng Liu, Daniel Rakita, Ronald R. Coifman, Yuval Kluger, Zhiwen Fan
+  type: Conference
+  venue: NeurIPS
+  year: 2026
 - title: Artificial Foveated Perception for Mitigating Shortcut Learning in Robotic Foundation Models
   authors: Xiatao Sun, Yuan Zhuang, Mateo Sanchez Lopez Negrete, Matei-Victor Coldea, Chen Liang, Haoyang Zhang, Che Liu, Ziyao Zeng, Shawn Li, Qian Wang, Fei Miao, Daniel Rakita
   type: Conference

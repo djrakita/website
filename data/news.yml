@@ -1,3 +1,11 @@
+- date: '2026-09-25'
+  type: Publication
+  title: Paper in collaboration with APOLLO Lab accepted at NeurIPS 2026!
+  content: |
+    <em>RuleSmith: Multi-Agent LLMs for Automated Game Balancing</em>, developed in collaboration with APOLLO Lab, has been accepted at NeurIPS 2026!
+    <br><br>
+    Authors: Ziyao Zeng, Hao Wang, Chen Liu, Youheng Yao, Jingcheng Ni, Tianyu Liu, Xiatao Sun, Fengyu Yang, Chenyu You, Xiaofeng Liu, Daniel Rakita, Ronald R. Coifman, Yuval Kluger, Zhiwen Fan.
+
 - date: '2026-09-04'
   type: Publication
   title: Two papers accepted to CoRL 2026!
