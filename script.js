@@ -14,7 +14,23 @@ document.addEventListener('DOMContentLoaded', () => {
         rootMargin: '0px 0px -50px 0px'
     });
 
-    revealElements.forEach(el => revealObserver.observe(el));
+    const deferredReveals = [];
+    revealElements.forEach(el => {
+        if (el.hasAttribute('data-reveal-after-scroll') && window.scrollY === 0) {
+            deferredReveals.push(el);
+        } else {
+            revealObserver.observe(el);
+        }
+    });
+
+    if (deferredReveals.length) {
+        const revealAfterScroll = () => {
+            if (window.scrollY <= 0) return;
+            deferredReveals.forEach(el => revealObserver.observe(el));
+            window.removeEventListener('scroll', revealAfterScroll);
+        };
+        window.addEventListener('scroll', revealAfterScroll, { passive: true });
+    }
 
     // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

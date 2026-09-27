@@ -196,7 +196,7 @@ nav ul {
 
 /* Main Content */
 .main_content {
-    padding-top: 4rem;
+    padding-top: 1rem;
 }
 
 .section_header {
@@ -218,6 +218,14 @@ nav ul {
 
 section {
     margin-bottom: 6rem;
+}
+
+#about_me {
+    margin-bottom: 1.5rem;
+}
+
+#about_me .section_header {
+    margin-bottom: 1rem;
 }
 
 /* News Section */
